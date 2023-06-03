@@ -21,7 +21,7 @@ interface CustomCardProps {
 const CustomCard: FC<CustomCardProps> = (props) => {
 const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <Card className="md:max-w-md max-w-sm min-h-full ease-out transition duration-300 hover:-translate-y-3" elevation={10}>
+    <Card className="lg:max-w-lg md:max-w-lg max-w-sm min-h-full ease-out transition duration-300 hover:-translate-y-3" elevation={10}>
       <CardActionArea disableTouchRipple>
         <CardMedia
           component = "img" 
@@ -31,18 +31,18 @@ const { image, alt, title, description, hrefWebsite, hrefCode } = props;
         />
         <CardContent>
           <h1 className="font-semibold mb-1 lg:mb-2 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md">{title}</h1>
-          <p className="text-gray-400 leading-relaxed 2xl:text-xl xl:text-lg lg:text-md md:text-sm sm:text-sm text-xs">
+          <p className="text-gray-400 leading-relaxed 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-sm text-xs">
             {description}
           </p>
         </CardContent>
-        <Grid className="flex justify-center md:mb-3 mb-2" >
+        <div className="flex justify-center md:mb-3 mb-2" >
             <Button className="mx-2 lg:text-lg md:text-md text-sm" href={hrefWebsite} target = "_blank" variant = "outlined">
               Website
             </Button>
             <Button className="mx-2 lg:text-lg md:text-md text-sm" href={hrefCode} target = "_blank" variant = "outlined">
               Code
             </Button>
-        </Grid>
+        </div>
       </CardActionArea>
     </Card>
   );

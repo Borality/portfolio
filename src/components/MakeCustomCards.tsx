@@ -14,15 +14,15 @@ interface makeCustomCardsProps {
 
 const getCardMaker: FC<makeCustomCardsProps> = (props) => {
   return (
-    <Grid item lg={6} md={12} style={{ maxWidth: 445 }}>
+    <div>
       <CustomCard {...props}></CustomCard>
-    </Grid>
+    </div>
   );
 };
 
 const MakeCustomCards = ({}) => {
   return (
-    <Grid container justifyContent="center " spacing={3}>
+    <Grid className="grid lg:grid-cols-2 grid-cols-1 gap-9">
       {Data.map((props: any) => getCardMaker(props))}
     </Grid>
   );
