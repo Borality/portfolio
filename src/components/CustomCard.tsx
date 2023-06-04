@@ -4,9 +4,8 @@ import {
   CardActionArea,
   CardMedia,
   CardContent,
-  Grid,
-  Button,
 } from "@mui/material";
+import  CustomButton from "../components/CustomButton";
 
 interface CustomCardProps {
     image: string;
@@ -15,19 +14,20 @@ interface CustomCardProps {
     description: string;
     hrefWebsite: string;
     hrefCode: string;
+    id: string;
 }
 
 
 const CustomCard: FC<CustomCardProps> = (props) => {
-const { image, alt, title, description, hrefWebsite, hrefCode } = props;
+const { image, alt, title, description, hrefWebsite, hrefCode} = props;
   return (
-    <Card className="lg:max-w-lg md:max-w-lg max-w-sm min-h-full ease-out transition duration-300 hover:-translate-y-3" elevation={10}>
+    <Card className="lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-300 hover:-translate-y-3" elevation={10}>
       <CardActionArea disableTouchRipple>
         <CardMedia
           component = "img" 
           image={image}
           alt={alt}
-          className="object-cover object-top max-h-36"
+          className="object-cover object-top md:max-h-40 max-h-36"
         />
         <CardContent>
           <h1 className="font-semibold mb-1 lg:mb-2 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md">{title}</h1>
@@ -35,13 +35,9 @@ const { image, alt, title, description, hrefWebsite, hrefCode } = props;
             {description}
           </p>
         </CardContent>
-        <div className="flex justify-center md:mb-3 mb-2" >
-            <Button className="mx-2 lg:text-lg md:text-md text-sm" href={hrefWebsite} target = "_blank" variant = "outlined">
-              Website
-            </Button>
-            <Button className="mx-2 lg:text-lg md:text-md text-sm" href={hrefCode} target = "_blank" variant = "outlined">
-              Code
-            </Button>
+        <div className="flex justify-center md:mb-3 mb-2 md:gap-2 gap-1" >
+            <CustomButton href={hrefWebsite} target="_blank" text="Website" />
+            <CustomButton href={hrefCode} target="_blank" text="Code" />
         </div>
       </CardActionArea>
     </Card>

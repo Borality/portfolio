@@ -11,10 +11,10 @@ const Footer: FC<FooterProps> = ({}) => {
         On the web
       </h1>
       <div className="flex justify-center">
-        <IconButton href="https://www.linkedin.com/in/charles-trangay/">
+        <IconButton href="https://www.linkedin.com/in/charles-trangay/" target="_blank">
           <LinkedInIcon className="lg:text-5xl md:text-4xl text-3xl" />
         </IconButton>
-        <IconButton href="https://github.com/Borality">
+        <IconButton href="https://github.com/Borality" target="_blank">
           <GitHub className="lg:text-5xl md:text-4xl text-3xl" />
         </IconButton>
       </div>

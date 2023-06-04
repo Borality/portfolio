@@ -10,19 +10,20 @@ interface makeCustomCardsProps {
   description: string;
   hrefWebsite: string;
   hrefCode: string;
+  id: string
 }
 
 const getCardMaker: FC<makeCustomCardsProps> = (props) => {
   return (
     <div>
-      <CustomCard {...props}></CustomCard>
+      <CustomCard key={props.id} {...props}></CustomCard>
     </div>
   );
 };
 
 const MakeCustomCards = ({}) => {
   return (
-    <Grid className="grid lg:grid-cols-2 grid-cols-1 gap-9">
+    <Grid className="grid lg:grid-cols-2 grid-cols-1 md:gap-9 gap-5">
       {Data.map((props: any) => getCardMaker(props))}
     </Grid>
   );
