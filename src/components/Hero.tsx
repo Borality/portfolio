@@ -7,8 +7,8 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <div className="md:mt-32 mt-20 md:mb-72 mb-10 flex items-center justify-center lg:flex-row flex-col lg:gap-32 md: md:gap-10 gap-4">
-      <div className=" mt-24">
+    <div className="lg:mt-44 md:mt-20 sm:mt-14 mt-10 lg:mb-72 md:mb-28 sm:mb-20 mb-10 flex items-center justify-center lg:flex-row flex-col xl:gap-32 lg:gap-20 md:gap-10 gap-4">
+      <div className="lg:mt-24 sm:mt-4">
         <h1 className="font-bold 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl">
           Charles Trangay
         </h1>
