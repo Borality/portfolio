@@ -10,7 +10,7 @@ interface makeCustomCardsProps {
   description: string;
   hrefWebsite: string;
   hrefCode: string;
-  id: string
+  id: string;
 }
 
 const getCardMaker: FC<makeCustomCardsProps> = (props) => {
