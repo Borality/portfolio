@@ -14,11 +14,16 @@ const Footer: FC<FooterProps> = ({}) => {
         <IconButton
           href="https://www.linkedin.com/in/charles-trangay/"
           target="_blank"
+          className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl"
         >
-          <LinkedInIcon className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl" />
+          <LinkedInIcon fontSize="inherit" />
         </IconButton>
-        <IconButton href="https://github.com/Borality" target="_blank">
-          <GitHub className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl" />
+        <IconButton
+          href="https://github.com/Borality"
+          target="_blank"
+          className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl"
+        >
+          <GitHub fontSize="inherit" />
         </IconButton>
       </div>
 
