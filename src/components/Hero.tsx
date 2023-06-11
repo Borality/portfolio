@@ -11,14 +11,14 @@ const Hero: FC<HeroProps> = ({}) => {
     <div className="xl:mt-52 lg:mt-40 md:mt-20 mt-10 lg:mb-72 md:mb-28 sm:mb-20 mb-10 flex items-center justify-center lg:flex-row flex-col xl:gap-48 lg:gap-20 md:gap-10 gap-4">
       <div className="lg:mt-24 md:mt-4">
         <h1
-          className={`2xl:text-8xl xl:text-8xl lg:text-6xl md:text-5xl text-4xl text-gray-900 font-bold ${bangers.className}`}
+          className={`2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-5xl text-gray-900 font-bold ${bangers.className}`}
         >
           Charles Trangay
         </h1>
         <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl md:pt-1 pt-0 text-gray-700 font-semibold">
           Software Engineer
         </h2>
-        <div className="lg:mt-6 lg:mb-3 mt-2 mb-1">
+        <div className="lg:mt-7 lg:mb-3 mt-2 mb-1">
           <h3 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-lg">
             I <b>BUILD</b>
           </h3>
