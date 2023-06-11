@@ -18,6 +18,7 @@ const CustomCard: FC<CustomCardProps> = (props) => {
     <Card
       className="lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-300 hover:-translate-y-3"
       elevation={10}
+      key = {props.id}
     >
       <CardActionArea disableTouchRipple>
         <CardMedia
