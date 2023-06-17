@@ -28,7 +28,7 @@ const MediaIcons: FC<MediaIconProps> = ({ href, icon, tooltip}) => {
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <div className="md:my-4 my-2" id="footer">
+    <div className="md:py-4 py-2" id="footer">
       <h3
         className={`lg:text-4xl md:text-2xl text-xl text-center underline underline-offset-4 lg:decoration-8 decoration-4 text-gray-800 decoration-slate-700 ${bangers.className}`}
       >

@@ -49,7 +49,7 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
   };
 
   return (
-    <div className="navbar bg-transparent fixed z-10">
+    <div className="navbar bg-transparent sticky top-0 z-10">
       <div className="flex-1">
         <div className="w-10">
           <img
