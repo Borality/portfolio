@@ -12,7 +12,7 @@ const CustomButton: FC<CustomButtonProps> = (props) => {
     <a
       href={href}
       target={target}
-      className="lg:text-lg md:text-md text-sm lg:my-2 text-gray-600 hover:text-white border border-gray-600 hover:bg-gray-700 font-medium rounded-lg px-4 py-1.5 text-center mr-2 mb-2 "
+      className="lg:text-lg md:text-md text-sm lg:my-2 text-gray-800 hover:text-white border border-gray-800 hover:bg-gray-700 font-medium rounded-lg px-4 py-1.5 text-center mr-2 mb-2 "
     >
       {text}
     </a>

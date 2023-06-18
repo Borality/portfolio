@@ -31,7 +31,7 @@ const CustomCard: FC<CustomCardProps> = (props) => {
           <h1 className="text-gray-700 font-semibold mb-1 lg:mb-2 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md">
             {title}
           </h1>
-          <p className="text-gray-500 leading-relaxed 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-sm text-xs">
+          <p className="text-gray-600 leading-relaxed 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-sm text-xs">
             {description}
           </p>
         </CardContent>

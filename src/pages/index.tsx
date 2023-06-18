@@ -8,7 +8,7 @@ export default function Home() {
   const [pageFixed, setPageFixed] = useState("");
   return (
     <div
-      className={`bg-gradient-to-br from-indigo-300 to-sky-200 text-gray-600 ${pageFixed}`}
+      className={`bg-gradient-to-r from-gray-200 to-sky-200 text-gray-800 ${pageFixed}`}
     >
       <Navbar setPageFixed={setPageFixed} />
       <main className="flex flex-col items-center justify-center w-11/12 mx-auto">

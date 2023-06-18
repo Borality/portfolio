@@ -71,7 +71,7 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
         </label>
         <ul
           tabIndex={0}
-          className={`menu menu-sm dropdown-content -mr-2 mt-3 p-2 shadow bg-base-100 w-screen h-screen z-10 ${displayMenuStyle == "none" ? "hidden" : ""}`}
+          className={`menu menu-sm dropdown-content -mr-2 mt-2 p-2 shadow bg-base-100 w-screen h-screen z-10 ${displayMenuStyle == "none" ? "hidden" : ""}`}
           //style={{ display: displayMenuStyle }}
         >
          <NavItemResponsive navName="Home" href="#hero"/>
