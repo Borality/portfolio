@@ -16,7 +16,7 @@ const CustomCard: FC<CustomCardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
     <Card
-      className="lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-300 hover:-translate-y-3"
+      className="lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-1000 hover:duration-300 hover:-translate-y-3"
       elevation={10}
       key = {props.id}
     >

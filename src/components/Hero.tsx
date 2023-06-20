@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Image from "next/image";
 import CustomButton from "../components/CustomButton";
 import { Bangers } from "next/font/google";
 const bangers = Bangers({ weight: "400", subsets: ["latin"] });
@@ -6,12 +7,9 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <div
-      className="xl:py-[28vh] lg:py-24 md:py-16 py-11 hero w-screen bg-[url('https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/hero4-transformed.jpeg?alt=media&token=9ed3a6c5-996f-4620-9da9-df9fa9ef03e1')]"
-      id="hero"
-    >
-      <div className="flex items-center justify-start lg:flex-row flex-col xl:gap-48 lg:gap-20 md:gap-10 gap-4 lg:w-10/12 w-11/12">
-        <div>
+    <div className="xl:py-[10vh] lg:py-24 md:py-14 py-11 " id="hero">
+      <div className=" flex items-center justify-center lg:flex-row flex-col xl:gap-10 lg:gap-20 md:gap-10 gap-4">
+        <div className="xl:mb-24">
           <h1
             className={`2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-5xl text-gray-900 font-bold ${bangers.className}`}
           >
@@ -30,6 +28,15 @@ const Hero: FC<HeroProps> = ({}) => {
             <CustomButton href="#projects" text="PROJECTS" />
           </div>
         </div>
+        <Image
+          src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/hero3-transformed.jpeg?alt=media&token=4de0110a-f24c-4eec-a9ee-b5a0468a6fbd"
+          width={550}
+          height={550}
+          alt="Hero image"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={true}
+          className="lg:max-h-full md:max-h-96 max-h-72 lg:max-w-3xl md:max-w-md max-w-xs object-cover object-top"
+        />
       </div>
     </div>
   );
