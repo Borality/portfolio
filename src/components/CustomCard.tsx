@@ -15,7 +15,7 @@ interface CustomCardProps {
 const CustomCard: FC<CustomCardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="card card-compact bg-base-100 shadow-xl lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-1000 hover:duration-300 hover:-translate-y-3">
+    <div className="card card-compact bg-neutral-50 shadow-xl lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-1000 hover:duration-300 hover:-translate-y-3">
       <figure>
         <Image
           src={image}
