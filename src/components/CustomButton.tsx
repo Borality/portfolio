@@ -16,4 +16,7 @@ React.AnchorHTMLAttributes<HTMLAnchorElement>
     />
 ));
 
+CustomButton.displayName = "CustomButton"
+
+
 export default CustomButton;
