@@ -26,12 +26,16 @@ const HeroShell = forwardRef<
   />
 ));
 
+HeroShell.displayName = "HeroShell";
+
 const HeroTextShell = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("xl:mb-24", className)} {...props} />
 ));
+
+HeroTextShell.displayName = "HeroTextShell";
 
 const HeroTitle = forwardRef<
   HTMLDivElement,
@@ -47,6 +51,8 @@ const HeroTitle = forwardRef<
   />
 ));
 
+HeroTitle.displayName = "HeroTitle";
+
 const HeroSubTitle = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -61,6 +67,8 @@ const HeroSubTitle = forwardRef<
   />
 ));
 
+HeroSubTitle.displayName = "HeroSubTitle";
+
 const HeroMessageShell = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -71,6 +79,8 @@ const HeroMessageShell = forwardRef<
     {...props}
   />
 ));
+
+HeroMessageShell.displayName = "HeroMessageShell";
 
 const HeroMessage = forwardRef<
   HTMLDivElement,
@@ -86,6 +96,8 @@ const HeroMessage = forwardRef<
   />
 ));
 
+HeroMessage.displayName = "HeroMessage";
+
 const HeroImage: FC<HeroImageProps> = ({ src }) => (
   <Image
     src={src}
@@ -97,6 +109,8 @@ const HeroImage: FC<HeroImageProps> = ({ src }) => (
     className="lg:max-h-full md:max-h-96 max-h-72 lg:max-w-3xl md:max-w-md max-w-xs object-cover object-top"
   />
 );
+
+HeroImage.displayName = "HeroImage";
 
 export {
   HeroShell,

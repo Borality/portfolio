@@ -5,17 +5,11 @@ import { Bangers } from "next/font/google";
 const bangers = Bangers({ weight: "400", subsets: ["latin"] });
 import { IconButton } from "@mui/material";
 
-interface ContactProps {}
-
 interface ContactIconProps {
   href: string;
   icon: ReactElement<any, any>;
   tooltip: string;
 }
-
-const Contact: FC<ContactProps> = ({}) => {
-  return <div>Contact</div>;
-};
 
 const ContactTitle = forwardRef<
   HTMLDivElement,
@@ -30,6 +24,8 @@ const ContactTitle = forwardRef<
     {...props}
   />
 ));
+
+ContactTitle.displayName = "ContactTitle";
 
 const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
   <IconButton

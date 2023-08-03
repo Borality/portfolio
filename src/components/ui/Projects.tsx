@@ -9,13 +9,12 @@ const ProjectsShell = forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn(
-        "xl:py-28 lg:py-20 md:py-14 py-10",
-      className
-    )}
+    className={cn("xl:py-28 lg:py-20 md:py-14 py-10", className)}
     {...props}
   />
 ));
+
+ProjectsShell.displayName = "ProjectsShell";
 
 const ProjectsTitle = forwardRef<
   HTMLDivElement,
@@ -24,14 +23,13 @@ const ProjectsTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-        `text-center font-semibold 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl text-4xl lg:pb-14 md:pb-8 pb-5 text-gray-800 ${bangers.className}`,
+      `text-center font-semibold 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl text-4xl lg:pb-14 md:pb-8 pb-5 text-gray-800 ${bangers.className}`,
       className
     )}
     {...props}
   />
 ));
 
-export {
-    ProjectsShell,
-    ProjectsTitle
-}
+ProjectsTitle.displayName = "ProjectsTitle";
+
+export { ProjectsShell, ProjectsTitle };
