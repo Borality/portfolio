@@ -1,7 +1,8 @@
-import Footer from "../components/Footer";
-import Projects from "../components/Projects";
-import Hero from "../components/Hero";
+import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/Contact";
 import { useState } from "react";
 export default function Home() {
   // Used to set page in a fixed position if menu is enabled in Navbar
@@ -14,8 +15,9 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center w-11/12 mx-auto">
         <Hero />
         <Projects />
-        <Footer />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

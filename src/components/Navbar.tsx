@@ -62,7 +62,7 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
         <ul className="menu menu-horizontal px-1">
           <NavItem navName="Home" href="#hero"/>
           <NavItem navName="Projects" href="#projects"/>
-          <NavItem navName="Contact" href="#footer"/>
+          <NavItem navName="Contact" href="#contact"/>
         </ul>
       </div>
       <div className="dropdown dropdown-end md:hidden" onClick={showMenu}>
@@ -76,7 +76,7 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
         >
          <NavItemResponsive navName="Home" href="#hero"/>
          <NavItemResponsive navName="Projects" href="#projects"/>
-         <NavItemResponsive navName="Contact" href="#footer"/>
+         <NavItemResponsive navName="Contact" href="#contact"/>
         </ul>
       </div>
     </div>

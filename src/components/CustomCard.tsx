@@ -34,9 +34,9 @@ const CustomCard: FC<CustomCardProps> = (props) => {
         <p className="text-gray-600 leading-relaxed 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-sm text-xs">
           {description}
         </p>
-        <div className="card-actions flex justify-center md:mb-2 mb-1 md:gap-2 gap-1">
-          <CustomButton href={hrefWebsite} target="_blank" text="Website" />
-          <CustomButton href={hrefCode} target="_blank" text="Code" />
+        <div className="card-actions flex justify-center md:mb-2 mb-1 md:gap-4 gap-2">
+          <CustomButton href={hrefWebsite} target="_blank">Website</CustomButton>
+          <CustomButton href={hrefCode} target="_blank">Code</CustomButton>
         </div>
       </div>
     </div>
