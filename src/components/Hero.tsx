@@ -19,7 +19,7 @@ const Hero: FC<HeroProps> = ({}) => {
         <HeroSubTitle>Charles Trangay</HeroSubTitle>
         <HeroMessageShell>
           <HeroMessage>
-            Empowering Innovation via Code. Evolving through Obstacles. Empowering through Competition.
+            Evolving through Obstacles. Empowering through Competition.
           </HeroMessage>
         </HeroMessageShell>
         <div className="lg:py-2 py-1">
