@@ -1,5 +1,5 @@
 import { FC } from "react";
-import MakeCustomCards from "./MakeCustomCards";
+import MakeCustomCards from "./ui/MakeCustomCards";
 import { Bangers } from "next/font/google";
 const bangers = Bangers({ weight: "400", subsets: ["latin"] });
 import { ProjectsShell, ProjectsTitle } from "./ui/Projects";

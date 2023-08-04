@@ -1,6 +1,6 @@
 import { FC } from "react";
-import CustomCard from "../components/CustomCard";
-import Data from "../components/Data";
+import CustomCard from "./CustomCard";
+import Data from "../Data";
 interface makeCustomCardsProps {
   image: string;
   alt: string;

@@ -3,7 +3,6 @@ import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 import { Bangers } from "next/font/google";
 const bangers = Bangers({ weight: "400", subsets: ["latin"] });
-import { IconButton } from "@mui/material";
 
 interface ContactIconProps {
   href: string;
@@ -18,7 +17,7 @@ const ContactTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      `lg:text-4xl md:text-2xl text-xl text-center underline underline-offset-4 lg:decoration-8 decoration-4 text-gray-800 decoration-slate-700 ${bangers.className}`,
+      `lg:text-5xl md:text-3xl text-2xl text-center underline underline-offset-4 lg:decoration-8 decoration-4 text-gray-800 decoration-slate-700 ${bangers.className}`,
       className
     )}
     {...props}
@@ -28,15 +27,14 @@ const ContactTitle = forwardRef<
 ContactTitle.displayName = "ContactTitle";
 
 const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
-  <IconButton
+  <a
     href={href}
-    target="_blank"
-    sx={{ fontSize: { xs: 30, sm: 36, md: 40, lg: 50 } }}
-    className="md:tooltip md:tooltip-bottom"
+    className="md:tooltip md:tooltip-bottom md:text-6xl text-4xl hover:text-gray-800"
     data-tip={tooltip}
+    target="_blank"
   >
     {icon}
-  </IconButton>
+  </a>
 );
 
 export { ContactTitle, ContactIcon };

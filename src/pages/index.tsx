@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/layouts/Footer";
 import Projects from "@/components/Projects";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layouts/Navbar";
 import Contact from "@/components/Contact";
 import { useState } from "react";
 export default function Home() {

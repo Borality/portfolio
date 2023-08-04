@@ -1,5 +1,5 @@
 import { FC } from "react";
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/ui/CustomButton";
 import {
   HeroShell,
   HeroTextShell,

@@ -1,6 +1,5 @@
 import { FC } from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { ContactTitle, ContactIcon } from "./ui/Contact";
 
 interface ContactProps {}
@@ -9,15 +8,15 @@ const Contact: FC<ContactProps> = ({}) => {
   return (
     <div className="md:py-3 py-1" id="contact">
       <ContactTitle>On the web</ContactTitle>
-      <div className="flex justify-center mb-7">
+      <div className="flex justify-center md:gap-3 gap-2 md:mt-6 mt-2">
         <ContactIcon
           href="https://www.linkedin.com/in/charles-trangay/"
-          icon={<LinkedInIcon fontSize="inherit" />}
+          icon={<AiFillLinkedin />}
           tooltip="LinkedIn"
         />
         <ContactIcon
           href="https://github.com/Borality"
-          icon={<GitHubIcon fontSize="inherit" />}
+          icon={<AiFillGithub />}
           tooltip="Github"
         />
       </div>
