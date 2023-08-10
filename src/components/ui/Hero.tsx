@@ -44,7 +44,7 @@ const HeroTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-      `2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-5xl text-gray-900 font-bold ${bangers.className}`,
+      `2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl text-5xl text-gray-900 font-normal ${bangers.className}`,
       className
     )}
     {...props}

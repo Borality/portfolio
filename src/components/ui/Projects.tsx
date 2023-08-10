@@ -23,7 +23,7 @@ const ProjectsTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-      `text-center font-semibold 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl text-4xl lg:pb-14 md:pb-8 pb-5 text-gray-800 ${bangers.className}`,
+      `text-center font-normal 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl text-4xl lg:pb-14 md:pb-8 pb-5 text-gray-800 ${bangers.className}`,
       className
     )}
     {...props}
