@@ -19,7 +19,7 @@ const HeroShell = forwardRef<
   <div
     ref={ref}
     className={cn(
-      "xl:py-[10vh] lg:py-24 md:py-14 py-11 flex items-center justify-center lg:flex-row flex-col xl:gap-10 lg:gap-20 md:gap-10 gap-4",
+      "xl:py-[10vh] lg:py-24 md:py-20 py-16 flex items-center justify-center lg:flex-row flex-col xl:gap-10 lg:gap-20 md:gap-10 gap-6",
       className
     )}
     {...props}
@@ -60,7 +60,7 @@ const HeroSubTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      "2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl text-2xl md:pt-0 pt-0 text-gray-800 font-semibold",
+      "2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-gray-800 font-semibold",
       className
     )}
     {...props}
@@ -69,19 +69,6 @@ const HeroSubTitle = forwardRef<
 
 HeroSubTitle.displayName = "HeroSubTitle";
 
-const HeroMessageShell = forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("lg:mt-7 lg:mb-3 mt-2 mb-1", className)}
-    {...props}
-  />
-));
-
-HeroMessageShell.displayName = "HeroMessageShell";
-
 const HeroMessage = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -89,7 +76,7 @@ const HeroMessage = forwardRef<
   <p
     ref={ref}
     className={cn(
-      "2xl:text-4xl xl:text-2xl lg:text-2xl md:text-xl text-lg lg:max-w-md max-w-xs leading-relaxed",
+      "2xl:text-4xl xl:text-2xl lg:text-2xl md:text-xl text-lg leading-relaxed",
       className
     )}
     {...props}
@@ -117,7 +104,6 @@ export {
   HeroTextShell,
   HeroTitle,
   HeroSubTitle,
-  HeroMessageShell,
   HeroMessage,
   HeroImage,
 };

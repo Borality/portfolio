@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { ContactTitle, ContactIcon } from "./ui/Contact";
+import { ContactTitle, ContactIcon } from "./ui/contact";
 
 interface ContactProps {}
 

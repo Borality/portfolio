@@ -9,7 +9,7 @@ const ProjectsShell = forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("xl:py-28 lg:py-20 md:py-14 py-10", className)}
+    className={cn("xl:py-28 lg:py-24 md:py-20 py-16", className)}
     {...props}
   />
 ));

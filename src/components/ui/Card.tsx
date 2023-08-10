@@ -1,5 +1,5 @@
 import { FC } from "react";
-import CustomButton from "./CustomButton";
+import Button from "./button";
 import Image from "next/image";
 
 interface CardProps {
@@ -55,17 +55,17 @@ const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
     <div className="card card-compact bg-neutral-50 shadow-xl lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-1000 hover:duration-300 hover:-translate-y-3">
-      <CardImage src={image} alt={alt}/>
+      <CardImage src={image} alt={alt} />
       <div className="card-body">
         <CardTitle title={title} />
         <CardDescription description={description} />
         <div className="card-actions flex justify-center md:mb-2 mb-1 md:gap-4 gap-2">
-          <CustomButton href={hrefWebsite} target="_blank">
+          <Button href={hrefWebsite} target="_blank">
             Website
-          </CustomButton>
-          <CustomButton href={hrefCode} target="_blank">
+          </Button>
+          <Button href={hrefCode} target="_blank">
             Code
-          </CustomButton>
+          </Button>
         </div>
       </div>
     </div>

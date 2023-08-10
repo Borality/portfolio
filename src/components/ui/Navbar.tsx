@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 
 interface NavbarProps {}
@@ -19,7 +20,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
 const NavItem: FC<NavItemProps> = ({ navItemName, href }) => {
   return (
     <li>
-      <a href={href}>{navItemName}</a>
+      <Link href={href} className="text-gray-700" scroll={false}>
+        {navItemName}
+      </Link>
     </li>
   );
 };
@@ -27,9 +30,9 @@ const NavItem: FC<NavItemProps> = ({ navItemName, href }) => {
 const NavItemMobile: FC<NavItemProps> = ({ navItemName, href }) => {
   return (
     <li>
-      <a href={href} className="text-2xl pl-8 py-3">
+      <Link href={href} scroll={false} className="text-2xl text-gray-700">
         {navItemName}
-      </a>
+      </Link>
     </li>
   );
 };
@@ -37,10 +40,7 @@ const NavItemMobile: FC<NavItemProps> = ({ navItemName, href }) => {
 const NavImage: FC<NavImgProps> = ({ imgSrc, href }) => {
   return (
     <a href={href}>
-      <img
-        className="rounded-full w-10"
-        src= {imgSrc}
-      />
+      <img className="rounded-full w-8 md:w-10" src={imgSrc} />
     </a>
   );
 };

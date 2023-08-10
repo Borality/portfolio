@@ -2,6 +2,7 @@ import { FC, ReactElement } from "react";
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 import { Bangers } from "next/font/google";
+import Link from "next/link";
 const bangers = Bangers({ weight: "400", subsets: ["latin"] });
 
 interface ContactIconProps {
@@ -27,14 +28,14 @@ const ContactTitle = forwardRef<
 ContactTitle.displayName = "ContactTitle";
 
 const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
-  <a
+  <Link
     href={href}
     className="md:tooltip md:tooltip-bottom md:text-6xl text-4xl hover:text-gray-800"
     data-tip={tooltip}
     target="_blank"
   >
     {icon}
-  </a>
+  </Link>
 );
 
 export { ContactTitle, ContactIcon };
