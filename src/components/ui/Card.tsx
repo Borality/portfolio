@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Button from "./Button";
+import CustomButton from "./CustomButton";
 import Image from "next/image";
 
 interface CardProps {
@@ -60,12 +60,12 @@ const Card: FC<CardProps> = (props) => {
         <CardTitle title={title} />
         <CardDescription description={description} />
         <div className="card-actions flex justify-center md:mb-2 mb-1 md:gap-4 gap-2">
-          <Button href={hrefWebsite} target="_blank">
+          <CustomButton href={hrefWebsite} target="_blank">
             Website
-          </Button>
-          <Button href={hrefCode} target="_blank">
+          </CustomButton>
+          <CustomButton href={hrefCode} target="_blank">
             Code
-          </Button>
+          </CustomButton>
         </div>
       </div>
     </div>

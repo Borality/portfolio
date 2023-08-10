@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
 
-const Button = forwardRef<
+const CustomButton = forwardRef<
   HTMLAnchorElement,
   React.AnchorHTMLAttributes<HTMLAnchorElement>
 >(({ className, ...props }, ref) => (
@@ -15,6 +15,6 @@ const Button = forwardRef<
   />
 ));
 
-Button.displayName = "Button";
+CustomButton.displayName = "CustomButton";
 
-export default Button;
+export default CustomButton;
