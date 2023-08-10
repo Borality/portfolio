@@ -1,6 +1,6 @@
 import { FC } from "react";
-import MakeCards from "./ui/makecards";
-import { ProjectsShell, ProjectsTitle } from "./ui/projects";
+import MakeCards from "@/components/ui/makecards";
+import { ProjectsShell, ProjectsTitle } from "@/components/ui/projects";
 
 interface ProjectsProps {}
 

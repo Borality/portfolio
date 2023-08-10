@@ -7,7 +7,7 @@ import {
   HeroSubTitle,
   HeroMessage,
   HeroImage,
-} from "./ui/hero";
+} from "@/components/ui/hero";
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
