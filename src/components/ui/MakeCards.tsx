@@ -1,4 +1,4 @@
-import Card from "./card";
+import Card from "./Card";
 import Data from "../Data";
 
 const MakeCards = ({}) => {

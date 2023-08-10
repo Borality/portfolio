@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Button from "./button";
+import Button from "./Button";
 import Image from "next/image";
 
 interface CardProps {

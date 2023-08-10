@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/Button";
 import {
   HeroShell,
   HeroTextShell,
@@ -7,7 +7,7 @@ import {
   HeroSubTitle,
   HeroMessage,
   HeroImage,
-} from "@/components/ui/hero";
+} from "@/components/ui/Hero";
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {

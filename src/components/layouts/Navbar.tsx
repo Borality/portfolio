@@ -1,6 +1,6 @@
 import { FC, useState, Dispatch, SetStateAction } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { NavItem, NavItemMobile, NavImage } from "@/components/ui/navbar";
+import { NavItem, NavItemMobile, NavImage } from "@/components/ui/Navbar";
 interface NavbarProps {
   setPageFixed: Dispatch<SetStateAction<string>>;
 }
