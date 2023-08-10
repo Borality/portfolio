@@ -15,6 +15,6 @@ const Button = forwardRef<
   />
 ));
 
-Button.displayName = "CustomButton";
+Button.displayName = "Button";
 
 export default Button;
