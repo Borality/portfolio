@@ -39,7 +39,7 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
   ];
 
   return (
-    <header className="sticky top-0 z-10 bg-transparent bg-gradient-to-r from-[#2980B9] via-[#6DD5FA] to-[#FFFFFF]">
+    <header className="sticky top-0 z-10 bg-bg_color">
       <nav className="navbar">
         <div className="flex-1">
           <NavImage
@@ -60,11 +60,11 @@ const Navbar: FC<NavbarProps> = ({ setPageFixed }) => {
         </section>
         <section className="dropdown dropdown-end md:hidden" onClick={showMenu}>
           <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <AiOutlineMenu className="text-xl" />
+            <AiOutlineMenu className="text-xl text-paragraph_color" />
           </label>
           <ul
             tabIndex={0}
-            className={`menu menu-sm dropdown-content -mr-2 mt-2 p-2 shadow bg-white w-screen h-screen z-10 ${
+            className={`menu menu-sm dropdown-content -mr-2 mt-2 p-2 shadow bg-subheading_color w-screen h-screen z-10 ${
               displayMenuStyle == "none" ? "hidden" : ""
             }`}
             //style={{ display: displayMenuStyle }}

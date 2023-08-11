@@ -20,7 +20,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
 const NavItem: FC<NavItemProps> = ({ navItemName, href }) => {
   return (
     <li>
-      <Link href={href} className="text-gray-700" scroll={false}>
+      <Link href={href} className="text-paragraph_color" scroll={false}>
         {navItemName}
       </Link>
     </li>

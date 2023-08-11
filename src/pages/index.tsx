@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div
-      className={`bg-gradient-to-r from-[#2980B9] via-[#6DD5FA] to-[#FFFFFF] text-gray-700`}
+      className={`bg-bg_color text-paragraph_color`}
     >
       <main className="flex flex-col items-center justify-center w-11/12 mx-auto">
         <Hero />
