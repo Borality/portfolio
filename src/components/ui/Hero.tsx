@@ -19,8 +19,8 @@ const HeroShell = forwardRef<
   <div
     ref={ref}
     className={cn(
-      "xl:py-[10vh] lg:py-24 md:py-20 py-16 flex items-center justify-center lg:flex-row flex-col xl:gap-10 lg:gap-20 md:gap-10 gap-6",
-      className
+      "flex flex-col items-center justify-center gap-6 md:gap-10 lg:flex-row lg:gap-20 xl:gap-10 md:h-[calc(100vh-3.5rem)] h-[calc(100vh-3rem)]",
+      className,
     )}
     {...props}
   />
@@ -44,8 +44,8 @@ const HeroTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-      `2xl:text-8xl xl:text-7xl lg:text-6xl md:text-6xl text-5xl text-heading_color font-normal ${bangers.className}`,
-      className
+      `text-5xl font-normal text-heading_color md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl ${bangers.className}`,
+      className,
     )}
     {...props}
   />
@@ -60,8 +60,8 @@ const HeroSubTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      "2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-subheading_color font-semibold",
-      className
+      "text-2xl font-semibold text-subheading_color md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
+      className,
     )}
     {...props}
   />
@@ -76,8 +76,8 @@ const HeroMessage = forwardRef<
   <p
     ref={ref}
     className={cn(
-      "2xl:text-4xl xl:text-2xl lg:text-2xl md:text-xl text-lg leading-relaxed",
-      className
+      "text-lg leading-relaxed md:text-xl lg:text-2xl xl:text-2xl 2xl:text-4xl",
+      className,
     )}
     {...props}
   />
@@ -93,7 +93,7 @@ const HeroImage: FC<HeroImageProps> = ({ src }) => (
     alt="Hero image"
     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     priority={true}
-    className="lg:max-h-full md:max-h-96 max-h-72 lg:max-w-3xl md:max-w-md max-w-xs object-cover object-top"
+    className="max-h-72 max-w-xs object-cover object-top md:max-h-96 md:max-w-md lg:max-h-full lg:max-w-3xl"
   />
 );
 

@@ -18,8 +18,8 @@ const ContactTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      `lg:text-5xl md:text-3xl text-2xl text-center underline underline-offset-4 lg:decoration-8 decoration-4 text-gray-800 decoration-slate-700 ${bangers.className}`,
-      className
+      `text-gray-800 decoration-slate-700 text-center text-2xl underline decoration-4 underline-offset-4 md:text-3xl lg:text-5xl lg:decoration-8 ${bangers.className}`,
+      className,
     )}
     {...props}
   />
@@ -30,7 +30,7 @@ ContactTitle.displayName = "ContactTitle";
 const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
   <Link
     href={href}
-    className="md:tooltip md:tooltip-bottom md:text-6xl text-4xl hover:text-gray-800"
+    className="hover:text-gray-800 text-4xl md:tooltip md:tooltip-bottom md:text-6xl"
     data-tip={tooltip}
     target="_blank"
   >

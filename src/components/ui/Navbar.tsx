@@ -20,7 +20,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
 const NavItem: FC<NavItemProps> = ({ navItemName, href }) => {
   return (
     <li>
-      <Link href={href} className="text-paragraph_color" scroll={false}>
+      <Link href={href} scroll={false} className="text-heading_color text-lg">
         {navItemName}
       </Link>
     </li>
@@ -30,7 +30,7 @@ const NavItem: FC<NavItemProps> = ({ navItemName, href }) => {
 const NavItemMobile: FC<NavItemProps> = ({ navItemName, href }) => {
   return (
     <li>
-      <Link href={href} scroll={false} className="text-2xl text-gray-700">
+      <Link href={href} scroll={false} className="text-heading_color text-md">
         {navItemName}
       </Link>
     </li>
@@ -40,7 +40,7 @@ const NavItemMobile: FC<NavItemProps> = ({ navItemName, href }) => {
 const NavImage: FC<NavImgProps> = ({ imgSrc, href }) => {
   return (
     <a href={href}>
-      <img className="rounded-full w-8 md:w-10" src={imgSrc} />
+      <img className="w-8 rounded-full md:w-10" src={imgSrc} />
     </a>
   );
 };

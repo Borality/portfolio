@@ -3,8 +3,8 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className="md:py-4 py-2 bg-bg_color text-paragraph_color">
-      <p className="md:text-lg text-sm md:mt-2 mt-1 opacity-50 text-center">
+    <footer className="bg-bg_color py-2 text-paragraph_color md:py-4">
+      <p className="mt-1 text-center text-sm opacity-50 md:mt-2 md:text-lg">
         &copy; {new Date().getFullYear()} Charles Trangay. All rights reserved.
       </p>
     </footer>

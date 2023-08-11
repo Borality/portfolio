@@ -26,13 +26,13 @@ interface CardImageProps {
 }
 
 const CardTitle: FC<CardTitleProps> = ({ title }) => (
-  <h2 className=" text-gray-700 font-semibold mb-1 lg:mb-2 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md">
+  <h2 className=" text-gray-700 text-md mb-1 font-semibold sm:text-lg md:text-xl lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
     {title}
   </h2>
 );
 
 const CardDescription: FC<CardDescriptionProps> = ({ description }) => (
-  <p className="text-gray-600 leading-relaxed 2xl:text-2xl xl:text-xl lg:text-lg md:text-lg sm:text-sm text-xs">
+  <p className="text-gray-600 text-xs leading-relaxed sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl">
     {description}
   </p>
 );
@@ -46,7 +46,7 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
       alt={alt}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       priority={true}
-      className="object-cover object-top md:max-h-40 max-h-36"
+      className="max-h-36 object-cover object-top md:max-h-40"
     />
   </figure>
 );
@@ -54,12 +54,12 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="card card-compact bg-bg_color shadow-xl lg:max-w-xl md:max-w-xl max-w-lg min-h-full ease-out transition duration-1000 hover:duration-300 hover:-translate-y-3">
+    <div className="card card-compact min-h-full max-w-lg bg-bg_color shadow-xl transition duration-1000 ease-out hover:-translate-y-3 hover:duration-300 md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
       <div className="card-body">
         <CardTitle title={title} />
         <CardDescription description={description} />
-        <div className="card-actions flex justify-center md:mb-2 mb-1 md:gap-4 gap-2">
+        <div className="card-actions mb-1 flex justify-center gap-2 md:mb-2 md:gap-4">
           <CustomButton href={hrefWebsite} target="_blank">
             Website
           </CustomButton>

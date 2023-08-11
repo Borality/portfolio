@@ -3,7 +3,7 @@ import Data from "../Data";
 
 const MakeCards = ({}) => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-9 gap-5">
+    <div className="grid grid-cols-1 gap-5 md:gap-9 lg:grid-cols-2">
       {Data.map((props) => (
         <Card key={props.id} {...props}></Card>
       ))}

@@ -9,7 +9,7 @@ const ProjectsShell = forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("xl:py-28 lg:py-24 md:py-20 py-16", className)}
+    className={cn("py-16 md:py-20 lg:py-24 xl:py-28", className)}
     {...props}
   />
 ));
@@ -23,8 +23,8 @@ const ProjectsTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-      `text-center font-normal 2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl text-4xl lg:pb-14 md:pb-8 pb-5 text-gray-800 ${bangers.className}`,
-      className
+      `text-gray-800 pb-5 text-center text-4xl font-normal md:pb-8 md:text-5xl lg:pb-14 lg:text-6xl xl:text-7xl 2xl:text-8xl ${bangers.className}`,
+      className,
     )}
     {...props}
   />

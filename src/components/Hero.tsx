@@ -16,12 +16,12 @@ const Hero: FC<HeroProps> = ({}) => {
       <HeroTextShell>
         <HeroTitle>Software Engineer</HeroTitle>
         <HeroSubTitle>Charles Trangay</HeroSubTitle>
-        <HeroMessage className="lg:my-7 my-3">
+        <HeroMessage className="my-3 lg:my-7">
           Evolving through Obstacles.
           <br /> Empowering through Competition.
         </HeroMessage>
         <CustomButton
-          className="lg:text-xl md:text-lg text-md px-6 py-3"
+          className="text-md px-6 py-3 md:text-lg lg:text-xl shadow-md shadow-subheading_color hover:shadow-xl hover:shadow-heading_color"
           href="#projects"
         >
           PROJECTS
