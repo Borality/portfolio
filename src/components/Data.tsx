@@ -1,4 +1,4 @@
-// Images
+// Images from public folder
 import projectBrochure from "../../public/projectBrochure.png";
 import weCook from "../../public/weCook.png";
 import crudApp from "../../public/crudApp.png";
