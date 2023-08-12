@@ -16,7 +16,7 @@ const Hero: FC<HeroProps> = ({}) => {
       <HeroTextShell>
         <HeroTitle>Software Engineer</HeroTitle>
         <HeroSubTitle>Charles Trangay</HeroSubTitle>
-        <HeroMessage className="my-3 lg:my-7">
+        <HeroMessage className="mt-3 mb-6 lg:mt-6 lg:mb-12">
           Evolving through Obstacles.
           <br /> Empowering through Competition.
         </HeroMessage>
