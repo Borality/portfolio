@@ -6,7 +6,7 @@ interface ContactProps {}
 
 const Contact: FC<ContactProps> = ({}) => {
   return (
-    <div className="py-1 md:py-3" id="contact">
+    <div className="py-6 md:py-12" id="contact">
       <ContactTitle>On the web</ContactTitle>
       <div className="mt-2 flex justify-center gap-2 md:mt-6 md:gap-3">
         <ContactIcon

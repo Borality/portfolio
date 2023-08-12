@@ -19,7 +19,7 @@ const HeroShell = forwardRef<
   <div
     ref={ref}
     className={cn(
-      "flex flex-col items-center justify-center gap-6 md:gap-10 lg:flex-row lg:gap-20 xl:gap-10 md:h-[calc(100vh-3.5rem)] h-[calc(100vh-3rem)]",
+      "flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-6 md:min-h-[calc(100vh-3.5rem)] md:gap-10 lg:flex-row lg:gap-20 xl:gap-10",
       className,
     )}
     {...props}
@@ -88,12 +88,12 @@ HeroMessage.displayName = "HeroMessage";
 const HeroImage: FC<HeroImageProps> = ({ src }) => (
   <Image
     src={src}
-    width={550}
-    height={550}
+    width={2048}
+    height={2048}
     alt="Hero image"
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    sizes="100vw"
     priority={true}
-    className="max-h-72 max-w-xs object-cover object-top md:max-h-96 md:max-w-md lg:max-h-full lg:max-w-3xl"
+    className="max-h-[20rem] max-w-[20rem] object-cover object-top md:max-h-[25rem] md:max-w-[25rem] lg:max-h-[500px] lg:max-w-[500px]"
   />
 );
 

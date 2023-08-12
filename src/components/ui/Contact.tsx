@@ -30,7 +30,7 @@ ContactTitle.displayName = "ContactTitle";
 const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
   <Link
     href={href}
-    className="hover:text-gray-800 text-4xl md:tooltip md:tooltip-bottom md:text-6xl"
+    className="hover:text-subheading_color text-4xl md:tooltip md:tooltip-bottom md:text-6xl"
     data-tip={tooltip}
     target="_blank"
   >
