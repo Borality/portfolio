@@ -56,7 +56,7 @@ const Card: FC<CardProps> = (props) => {
   return (
     <div className="card card-compact min-h-full max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
-      <div className="card-body">
+      <div className="card-body max-w-[70ch]">
         <CardTitle title={title} />
         <CardDescription description={description} />
         <div className="card-actions mb-1 flex justify-center gap-2 md:mb-2 md:gap-4">
