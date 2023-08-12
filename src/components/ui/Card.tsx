@@ -26,7 +26,7 @@ interface CardImageProps {
 }
 
 const CardTitle: FC<CardTitleProps> = ({ title }) => (
-  <h2 className=" text-md mb-1 font-semibold text-gray-700 sm:text-lg md:text-xl lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
+  <h2 className="text-md mb-1 font-semibold tracking-tight text-paragraph_color sm:text-lg md:text-xl lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
     {title}
   </h2>
 );

@@ -60,7 +60,7 @@ const HeroSubTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      "text-2xl font-semibold text-subheading_color md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
+      "tracking-tight text-2xl font-semibold text-subheading_color md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
       className,
     )}
     {...props}
