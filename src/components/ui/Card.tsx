@@ -26,13 +26,13 @@ interface CardImageProps {
 }
 
 const CardTitle: FC<CardTitleProps> = ({ title }) => (
-  <h2 className="text-md mb-1 font-semibold tracking-tight text-paragraph_color sm:text-lg md:text-xl lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
+  <h2 className="text-lg font-semibold tracking-tight text-paragraph_color lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
     {title}
   </h2>
 );
 
 const CardDescription: FC<CardDescriptionProps> = ({ description }) => (
-  <p className="text-xs leading-relaxed text-gray-600 sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl">
+  <p className="text-sm leading-tight text-gray-600 lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight 2xl:text-2xl 2xl:leading-tight">
     {description}
   </p>
 );
