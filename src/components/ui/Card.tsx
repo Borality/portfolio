@@ -14,14 +14,6 @@ interface CardProps {
   id: string;
 }
 
-interface CardTitleProps {
-  title: string;
-}
-
-interface CardDescriptionProps {
-  description: string;
-}
-
 interface CardImageProps {
   src: string;
   alt: string;
@@ -59,7 +51,6 @@ const CardDescription = forwardRef<
 
 CardDescription.displayName = "CardDescription";
 
-
 const CardImage: FC<CardImageProps> = ({ src, alt }) => (
   <figure>
     <Image
@@ -77,14 +68,14 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="min-h-full max-w-lg rounded-xl bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
+    <div className="min-h-full max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
-      <section className="mx-auto w-[95%] max-w-[70ch]">
+      <section className="mx-2 max-w-[70ch] md:mx-4">
         <CardTitle className="mt-1 md:mt-2">{title}</CardTitle>
         <CardDescription className="mb-4 mt-2 md:mb-8 md:mt-4">
           {description}
         </CardDescription>
-        <div className="mb-1 flex justify-start gap-2 md:mb-2 md:gap-5">
+        <div className="mb-3 flex justify-start gap-2 md:mb-5 md:gap-5">
           <CustomButton href={hrefWebsite} target="_blank">
             Website
           </CustomButton>
