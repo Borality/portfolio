@@ -57,6 +57,9 @@ const CardDescription = forwardRef<
   />
 ));
 
+CardDescription.displayName = "CardDescription";
+
+
 const CardImage: FC<CardImageProps> = ({ src, alt }) => (
   <figure>
     <Image
