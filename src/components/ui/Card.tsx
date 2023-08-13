@@ -1,6 +1,8 @@
 import { FC } from "react";
 import CustomButton from "./CustomButton";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { forwardRef } from "react";
 
 interface CardProps {
   image: string;
@@ -25,17 +27,35 @@ interface CardImageProps {
   alt: string;
 }
 
-const CardTitle: FC<CardTitleProps> = ({ title }) => (
-  <h2 className="text-lg font-semibold tracking-tight text-paragraph_color lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl">
-    {title}
-  </h2>
-);
+const CardTitle = forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <h2
+    ref={ref}
+    className={cn(
+      "text-lg font-semibold tracking-tight text-paragraph_color lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl",
+      className,
+    )}
+    {...props}
+  />
+));
 
-const CardDescription: FC<CardDescriptionProps> = ({ description }) => (
-  <p className="text-sm leading-tight text-gray-600 lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight 2xl:text-2xl 2xl:leading-tight">
-    {description}
-  </p>
-);
+CardTitle.displayName = "CardTitle";
+
+const CardDescription = forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <p
+    ref={ref}
+    className={cn(
+      "text-sm leading-tight text-gray-600 lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight 2xl:text-2xl 2xl:leading-tight",
+      className,
+    )}
+    {...props}
+  />
+));
 
 const CardImage: FC<CardImageProps> = ({ src, alt }) => (
   <figure>
@@ -54,12 +74,14 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="card card-compact min-h-full max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
+    <div className="min-h-full max-w-lg rounded-xl bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
-      <div className="card-body max-w-[70ch]">
-        <CardTitle title={title} />
-        <CardDescription description={description} />
-        <div className="card-actions mb-1 flex justify-center gap-2 md:mb-2 md:gap-4">
+      <section className="mx-auto w-[95%] max-w-[70ch]">
+        <CardTitle className="mt-1 md:mt-2">{title}</CardTitle>
+        <CardDescription className="mb-4 mt-2 md:mb-8 md:mt-4">
+          {description}
+        </CardDescription>
+        <div className="mb-1 flex justify-start gap-2 md:mb-2 md:gap-5">
           <CustomButton href={hrefWebsite} target="_blank">
             Website
           </CustomButton>
@@ -67,7 +89,7 @@ const Card: FC<CardProps> = (props) => {
             Code
           </CustomButton>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

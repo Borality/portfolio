@@ -7,7 +7,7 @@ interface ContactProps {}
 const Contact: FC<ContactProps> = ({}) => {
   return (
     <div className="py-6 md:py-12" id="contact">
-      <ContactTitle>On the web</ContactTitle>
+      <ContactTitle className="text-center">On the web</ContactTitle>
       <div className="mt-2 flex justify-center gap-2 md:mt-6 md:gap-3">
         <ContactIcon
           href="https://www.linkedin.com/in/charles-trangay/"

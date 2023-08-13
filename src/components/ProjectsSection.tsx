@@ -7,7 +7,9 @@ interface ProjectsProps {}
 const Projects: FC<ProjectsProps> = ({}) => {
   return (
     <ProjectsShell id="projects">
-      <ProjectsTitle>Projects</ProjectsTitle>
+      <ProjectsTitle className="mb-6 text-center md:mb-10 lg:mb-20">
+        Projects
+      </ProjectsTitle>
       <MakeCards />
     </ProjectsShell>
   );
