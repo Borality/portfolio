@@ -18,7 +18,7 @@ const ContactTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      `text-5xl font-normal text-heading_color underline decoration-heading_color decoration-4 underline-offset-4 md:text-6xl lg:decoration-8 xl:text-7xl 2xl:text-8xl ${bangers.className}`,
+      `text-4xl font-normal text-heading_color underline decoration-heading_color decoration-4 underline-offset-4 md:text-5xl lg:decoration-8 xl:text-6xl 2xl:text-7xl ${bangers.className}`,
       className,
     )}
     {...props}

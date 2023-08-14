@@ -20,10 +20,10 @@ const ProjectsTitle = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <h1
+  <h2
     ref={ref}
     className={cn(
-      `text-5xl font-normal text-heading_color md:text-6xl xl:text-7xl 2xl:text-8xl ${bangers.className}`,
+      `text-4xl font-normal text-heading_color md:text-5xl xl:text-6xl 2xl:text-7xl ${bangers.className}`,
       className,
     )}
     {...props}
