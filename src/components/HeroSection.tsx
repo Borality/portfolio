@@ -27,7 +27,7 @@ const Hero: FC<HeroProps> = ({}) => {
           PROJECTS
         </CustomButton>
       </HeroTextShell>
-      <HeroImage src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/hero3-transformed.jpeg?alt=media&token=4de0110a-f24c-4eec-a9ee-b5a0468a6fbd" />
+      <HeroImage src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/portfolio-hero-compressed.png?alt=media&token=784548cb-4dbb-49cc-adc1-9554cfadc30d" />
     </HeroShell>
   );
 };
