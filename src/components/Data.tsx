@@ -1,14 +1,14 @@
 // Images
 const pizza =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/projectBrochure.PNG?alt=media&token=464ca837-e41b-44c7-a6f0-d8c038a1e7f5";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fpizza-project-compressed.png?alt=media&token=6796854c-1b74-458b-8728-93c0cbafa946";
 const weCook =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/weCook.PNG?alt=media&token=debebbc1-6679-460e-b5f1-94f59a747c0d";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fwecook-project-compressed.png?alt=media&token=851971d1-23aa-4626-bc0d-f1dbc4ac8cf9";
 const crudApp =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/crudApp.PNG?alt=media&token=97fc9dc2-56d4-468b-bd17-b7d724eefaf7";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fcrudapp-project-compressed.png?alt=media&token=74bdbcdb-bde7-443e-b903-8b039c10ed6e";
 const uniDrop =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/UniDrop.png?alt=media&token=fdeaa7fa-c56f-49fa-8b64-6a84ad2d97f7";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Funidrop-project-compressed.png?alt=media&token=8057d3ad-3f9e-40d8-8d5d-486a008427d1";
 const bestBuy =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/best-buy-clone.png?alt=media&token=9061969c-2888-4ff7-89ae-0a5b8c7bd4e1";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fbestbuy-project-compressed.png?alt=media&token=90868363-a907-4f51-a673-e2844931c9bd";
 // Stores data of the cards
 export default [
   {

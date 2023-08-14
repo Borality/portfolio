@@ -23,7 +23,7 @@ const Navbar: FC<NavbarProps> = () => {
       <nav className="mx-auto flex h-[3rem] w-11/12 items-center justify-between md:h-[3.5rem]">
         <NavImage
           href="https://charlestrangay.com/"
-          imgSrc="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/MyLogo.png?alt=media&token=8bb3bf7b-7b35-4774-a8e3-b163699d024e"
+          imgSrc="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Flogo-compressed.png?alt=media&token=83d9361f-2066-4983-a819-90f2fbfc8e9f"
         />
         <section className="hidden md:block">
           <ul className="menu menu-horizontal">
