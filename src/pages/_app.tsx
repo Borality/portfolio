@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Footer from "@/components/layouts/Footer";
-import Navbar from "@/components/layouts/Navbar";
+import FooterSection from "@/components/layouts/FooterSection";
+import NavbarSection from "@/components/layouts/NavbarSection";
 import { Analytics } from '@vercel/analytics/react';
 // Fonts
 import { Rubik } from "next/font/google";
@@ -12,11 +12,11 @@ const rubik = Rubik({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Navbar />
+      <NavbarSection />
       <main className={rubik.className}>
         <Component {...pageProps} />
       </main>
-      <Footer />
+      <FooterSection />
       <Analytics />
     </>
   );

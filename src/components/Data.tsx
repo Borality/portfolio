@@ -1,5 +1,5 @@
 // Images
-const projectBrochure =
+const pizza =
   "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/projectBrochure.PNG?alt=media&token=464ca837-e41b-44c7-a6f0-d8c038a1e7f5";
 const weCook =
   "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/weCook.PNG?alt=media&token=debebbc1-6679-460e-b5f1-94f59a747c0d";
@@ -7,11 +7,13 @@ const crudApp =
   "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/crudApp.PNG?alt=media&token=97fc9dc2-56d4-468b-bd17-b7d724eefaf7";
 const uniDrop =
   "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/UniDrop.png?alt=media&token=fdeaa7fa-c56f-49fa-8b64-6a84ad2d97f7";
+const bestBuy =
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/best-buy-clone.png?alt=media&token=9061969c-2888-4ff7-89ae-0a5b8c7bd4e1";
 // Stores data of the cards
 export default [
   {
-    image: projectBrochure,
-    alt: "pizza",
+    image: pizza,
+    alt: "Pizza",
     title: "Pizza website",
     description:
       "A redesign of a popular pizza website using HTML/CSS, Javascript, React, and Material UI for the component library.",
@@ -30,16 +32,6 @@ export default [
     id: "https://github.com/Borality/WeCook",
   },
   {
-    image: crudApp,
-    alt: "crud app picture",
-    title: "CRUD website",
-    description:
-      "A basic CRUD application using React, Material UI for the component library, MYSQL for the database, and Express JS.",
-    hrefWebsite: "https://github.com/Borality/CRUD-APP",
-    hrefCode: "https://github.com/Borality/CRUD-APP",
-    id: "https://github.com/Borality/CRUD-APP",
-  },
-  {
     image: uniDrop,
     alt: "UniDrop picture",
     title: "UniDrop application",
@@ -48,5 +40,25 @@ export default [
     hrefWebsite: "https://github.com/Borality/UniDrop_mobile",
     hrefCode: "https://github.com/Borality/UniDrop_mobile",
     id: "https://github.com/Borality/UniDrop_mobile",
+  },
+  {
+    image: bestBuy,
+    alt: "Bestbuy picture",
+    title: "BestBuy website",
+    description:
+      "Redesigned the BestBuy website using Tailwind CSS for styling and React for the user interface. Mainly a frontend project.",
+    hrefWebsite: "https://best-buy-clone.vercel.app/",
+    hrefCode: "https://github.com/Borality/best-buy-clone",
+    id: "https://github.com/Borality/best-buy-clone",
+  },
+  {
+    image: crudApp,
+    alt: "Crud app",
+    title: "CRUD website",
+    description:
+      "A basic CRUD application using React, Material UI for the component library, MYSQL for the database, and Express JS.",
+    hrefWebsite: "https://github.com/Borality/CRUD-APP",
+    hrefCode: "https://github.com/Borality/CRUD-APP",
+    id: "https://github.com/Borality/CRUD-APP",
   },
 ];

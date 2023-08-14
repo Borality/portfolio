@@ -68,7 +68,7 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="min-h-full max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
+    <div className="max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
       <section className="mx-2 max-w-[70ch] md:mx-4">
         <CardTitle className="mt-1 md:mt-2">{title}</CardTitle>
