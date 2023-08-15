@@ -14,7 +14,7 @@ const Hero: FC<HeroProps> = ({}) => {
   return (
     <HeroShell id="hero">
       <HeroTextShell>
-        <HeroTitle className="md:min-w-[15ch]">Software Engineer</HeroTitle>
+        <HeroTitle>Software Engineer</HeroTitle>
         <HeroSubTitle>Charles Trangay</HeroSubTitle>
         <HeroMessage className="mb-6 mt-3 lg:mb-12 lg:mt-6">
           Evolving through Obstacles.
