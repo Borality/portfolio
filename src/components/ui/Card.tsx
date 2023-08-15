@@ -42,7 +42,7 @@ const CardDescription = forwardRef<
   <p
     ref={ref}
     className={cn(
-      "text-sm leading-tight text-gray-600 lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight 2xl:text-2xl 2xl:leading-tight",
+      "text-sm/tight text-gray-600 lg:text-lg/tight xl:text-xl/tight 2xl:text-2xl/tight",
       className,
     )}
     {...props}
