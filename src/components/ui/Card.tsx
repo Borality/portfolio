@@ -54,11 +54,10 @@ CardDescription.displayName = "CardDescription";
 const CardImage: FC<CardImageProps> = ({ src, alt }) => (
   <Image
     src={src}
-    width={600}
-    height={600}
+    width={576}
+    height={160}
     alt={alt}
-    sizes="100vw"
-    priority={true}
+    sizes="(min-width: 1400px) 576px, (min-width: 1040px) calc(34.41vw + 101px), (min-width: 780px) 576px, (min-width: 600px) 512px, calc(84.64vw + 21px)"
     className="max-h-36 object-cover object-top md:max-h-40"
   />
 );
