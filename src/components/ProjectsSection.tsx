@@ -7,6 +7,7 @@ interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = ({}) => {
   return (
+    <section className="bg-bg_gray">
     <ProjectsShell id="projects">
       <ProjectsTitle className="mb-6 text-center md:mb-10 lg:mb-20">
         Projects
@@ -17,6 +18,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
         ))}
       </div>
     </ProjectsShell>
+    </section>
   );
 };
 

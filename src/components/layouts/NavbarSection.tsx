@@ -19,7 +19,7 @@ const Navbar: FC<NavbarProps> = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-10 bg-bg_color">
+    <header className="sticky top-0 z-10 bg-bg_white">
       <nav className="mx-auto flex h-[3rem] w-11/12 items-center justify-between md:h-[3.5rem]">
         <NavImage
           href="https://charlestrangay.com/"

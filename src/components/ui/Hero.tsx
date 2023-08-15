@@ -16,10 +16,10 @@ const HeroShell = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <section
+  <div
     ref={ref}
     className={cn(
-      "flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-8 md:min-h-[calc(100vh-3.5rem)] md:gap-12 lg:flex-row lg:gap-16 xl:gap-24",
+      "mx-auto w-11/12 flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-8 md:min-h-[calc(100vh-3.5rem)] md:gap-12 lg:flex-row lg:gap-16 xl:gap-24",
       className,
     )}
     {...props}

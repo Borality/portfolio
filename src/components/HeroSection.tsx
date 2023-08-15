@@ -12,6 +12,7 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
+    <section className="bg-bg_white">
     <HeroShell id="hero">
       <HeroTextShell>
         <HeroTitle>Software Engineer</HeroTitle>
@@ -29,6 +30,7 @@ const Hero: FC<HeroProps> = ({}) => {
       </HeroTextShell>
       <HeroImage src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fportfolio-hero-compressed.png?alt=media&token=1b1238a0-37c5-4bc7-bf8c-5774d5c288f0" />
     </HeroShell>
+    </section>
   );
 };
 
