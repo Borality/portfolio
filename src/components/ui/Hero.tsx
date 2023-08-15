@@ -93,7 +93,7 @@ const HeroImage: FC<HeroImageProps> = ({ src }) => (
     alt="Hero image"
     sizes="100vw"
     priority={true}
-    className="h-auto w-full md:w-screen max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] md:max-w-[25rem] lg:max-w-[500px] lg:drop-shadow-[0_0_1rem_#1d82f9]"
+    className="h-auto w-full md:w-screen max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] md:max-w-[22rem] lg:max-w-[25rem] xl:max-w-[31rem] lg:drop-shadow-[0_0_1rem_#1d82f9]"
   />
 );
 
