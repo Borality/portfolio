@@ -7,7 +7,7 @@ const ProjectsShell = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <section
     ref={ref}
     className={cn("py-16 md:py-20 lg:py-24 xl:py-28", className)}
     {...props}

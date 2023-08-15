@@ -6,7 +6,7 @@ interface ContactProps {}
 
 const Contact: FC<ContactProps> = ({}) => {
   return (
-    <div className="py-6 md:py-12" id="contact">
+    <section className="py-6 md:py-12" id="contact">
       <ContactTitle className="text-center">On the web</ContactTitle>
       <div className="mt-2 flex justify-center gap-2 md:mt-6 md:gap-3">
         <ContactIcon
@@ -20,7 +20,7 @@ const Contact: FC<ContactProps> = ({}) => {
           tooltip="Github"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

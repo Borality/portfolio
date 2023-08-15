@@ -23,7 +23,7 @@ const CardTitle = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <h2
+  <h3
     ref={ref}
     className={cn(
       "text-lg font-semibold tracking-tight text-paragraph_color lg:mb-2 lg:text-2xl xl:text-3xl 2xl:text-4xl",
@@ -52,25 +52,23 @@ const CardDescription = forwardRef<
 CardDescription.displayName = "CardDescription";
 
 const CardImage: FC<CardImageProps> = ({ src, alt }) => (
-  <figure>
-    <Image
-      src={src}
-      width={600}
-      height={600}
-      alt={alt}
-      sizes="100vw"
-      priority={true}
-      className="max-h-36 object-cover object-top md:max-h-40"
-    />
-  </figure>
+  <Image
+    src={src}
+    width={600}
+    height={600}
+    alt={alt}
+    sizes="100vw"
+    priority={true}
+    className="max-h-36 object-cover object-top md:max-h-40"
+  />
 );
 
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <div className="max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
+    <section className="max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
-      <section className="mx-2 max-w-[70ch] md:mx-4">
+      <div className="mx-2 max-w-[70ch] md:mx-4">
         <CardTitle className="mt-1 md:mt-2">{title}</CardTitle>
         <CardDescription className="mb-4 mt-2 md:mb-8 md:mt-4">
           {description}
@@ -83,8 +81,8 @@ const Card: FC<CardProps> = (props) => {
             Code
           </CustomButton>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

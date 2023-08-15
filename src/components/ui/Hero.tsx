@@ -16,7 +16,7 @@ const HeroShell = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
+  <section
     ref={ref}
     className={cn(
       "flex min-h-[calc(100vh-3rem)] flex-col items-center justify-center gap-8 md:min-h-[calc(100vh-3.5rem)] md:gap-10 lg:flex-row lg:gap-16 xl:gap-24",
@@ -93,7 +93,7 @@ const HeroImage: FC<HeroImageProps> = ({ src }) => (
     alt="Hero image"
     sizes="100vw"
     priority={true}
-    className="h-auto w-full max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] lg:drop-shadow-[0_0_1rem_#1d82f9] md:max-w-[25rem] lg:max-w-[500px]"
+    className="h-auto w-full max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] md:max-w-[25rem] lg:max-w-[500px] lg:drop-shadow-[0_0_1rem_#1d82f9]"
   />
 );
 
