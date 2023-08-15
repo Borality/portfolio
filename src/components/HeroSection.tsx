@@ -14,7 +14,7 @@ const Hero: FC<HeroProps> = ({}) => {
   return (
     <HeroShell id="hero">
       <HeroTextShell>
-        <HeroTitle>Software Engineer</HeroTitle>
+        <HeroTitle className="md:min-w-[15ch]">Software Engineer</HeroTitle>
         <HeroSubTitle>Charles Trangay</HeroSubTitle>
         <HeroMessage className="mb-6 mt-3 lg:mb-12 lg:mt-6">
           Evolving through Obstacles.
@@ -27,7 +27,7 @@ const Hero: FC<HeroProps> = ({}) => {
           PROJECTS
         </CustomButton>
       </HeroTextShell>
-      <HeroImage src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fportfolio-hero-compressed.png?alt=media&token=a1704113-e76c-49c1-a7a1-db05864e05ce" />
+      <HeroImage src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fportfolio-hero-compressed.png?alt=media&token=1b1238a0-37c5-4bc7-bf8c-5774d5c288f0" />
     </HeroShell>
   );
 };

@@ -1,6 +1,6 @@
 // Images
 const pizza =
-  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fpizza-project-compressed.png?alt=media&token=6796854c-1b74-458b-8728-93c0cbafa946";
+  "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fpizza-project-compressed.png?alt=media&token=d4d1259e-33f7-4a7f-b266-73962438be24";
 const weCook =
   "https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Fwecook-project-compressed.png?alt=media&token=851971d1-23aa-4626-bc0d-f1dbc4ac8cf9";
 const crudApp =

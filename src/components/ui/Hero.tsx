@@ -44,7 +44,7 @@ const HeroTitle = forwardRef<
   <h1
     ref={ref}
     className={cn(
-      `text-5xl font-normal text-heading_color md:text-6xl xl:text-7xl 2xl:text-8xl ${bangers.className}`,
+      `text-5xl font-normal text-heading_color md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl ${bangers.className}`,
       className,
     )}
     {...props}
@@ -60,7 +60,7 @@ const HeroSubTitle = forwardRef<
   <h2
     ref={ref}
     className={cn(
-      "text-2xl font-semibold tracking-tight text-subheading_color md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
+      "text-3xl font-semibold tracking-tight text-subheading_color md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
       className,
     )}
     {...props}
@@ -76,7 +76,7 @@ const HeroMessage = forwardRef<
   <p
     ref={ref}
     className={cn(
-      "text-lg leading-tight md:text-xl md:leading-tight lg:text-2xl lg:leading-tight xl:text-2xl xl:leading-tight 2xl:text-4xl 2xl:leading-tight",
+      "text-lg leading-tight md:text-xl md:leading-tight lg:text-2xl lg:leading-tight xl:text-3xl xl:leading-tight 2xl:text-4xl 2xl:leading-tight",
       className,
     )}
     {...props}
@@ -88,12 +88,12 @@ HeroMessage.displayName = "HeroMessage";
 const HeroImage: FC<HeroImageProps> = ({ src }) => (
   <Image
     src={src}
-    width={2048}
-    height={2048}
+    width={1000}
+    height={1000}
     alt="Hero image"
     sizes="100vw"
     priority={true}
-    className="h-auto w-full max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] md:max-w-[25rem] lg:max-w-[500px] lg:drop-shadow-[0_0_1rem_#1d82f9]"
+    className="h-auto max-w-[20rem] rounded-bl-[5rem] rounded-tr-[5rem] md:max-w-[25rem] lg:max-w-[500px] lg:drop-shadow-[0_0_1rem_#1d82f9]"
   />
 );
 
