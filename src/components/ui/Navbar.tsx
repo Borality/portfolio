@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -40,7 +41,13 @@ const NavItemMobile: FC<NavItemProps> = ({ navItemName, href }) => {
 const NavImage: FC<NavImgProps> = ({ imgSrc, href }) => {
   return (
     <a href={href}>
-      <img alt="logo" className="w-8 rounded-full md:w-10" src={imgSrc} />
+      <Image
+        alt="logo"
+        width="40"
+        height="40"
+        className="w-8 rounded-full md:w-10"
+        src={imgSrc}
+      />
     </a>
   );
 };
