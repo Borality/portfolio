@@ -1,5 +1,5 @@
 import { FC } from "react";
-import CustomButton from "./CustomButton";
+import ButtonLink from "./ButtonLink";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
@@ -65,7 +65,7 @@ const CardImage: FC<CardImageProps> = ({ src, alt }) => (
 const Card: FC<CardProps> = (props) => {
   const { image, alt, title, description, hrefWebsite, hrefCode } = props;
   return (
-    <section className="max-w-lg bg-bg_color shadow-xl md:max-w-xl lg:max-w-xl">
+    <section className="bg-bg_color max-w-lg shadow-xl md:max-w-xl lg:max-w-xl">
       <CardImage src={image} alt={alt} />
       <div className="mx-2 max-w-[70ch] md:mx-4">
         <CardTitle className="mt-1 md:mt-2">{title}</CardTitle>
@@ -73,12 +73,12 @@ const Card: FC<CardProps> = (props) => {
           {description}
         </CardDescription>
         <div className="mb-3 flex justify-start gap-2 md:mb-5 md:gap-5">
-          <CustomButton href={hrefWebsite} target="_blank">
+          <ButtonLink href={hrefWebsite} target="_blank">
             Website
-          </CustomButton>
-          <CustomButton href={hrefCode} target="_blank">
+          </ButtonLink>
+          <ButtonLink href={hrefCode} target="_blank">
             Code
-          </CustomButton>
+          </ButtonLink>
         </div>
       </div>
     </section>
