@@ -33,6 +33,7 @@ const ContactIcon: FC<ContactIconProps> = ({ href, icon, tooltip }) => (
     className="text-4xl text-heading_color md:tooltip md:tooltip-bottom hover:text-subheading_color md:text-6xl"
     data-tip={tooltip}
     target="_blank"
+    aria-label={tooltip}
   >
     {icon}
   </Link>
