@@ -22,7 +22,7 @@ const Hero: FC<HeroProps> = ({}) => {
             <br /> Empowering through Competition.
           </HeroMessage>
           <ButtonLink
-            className="text-md px-6 py-3 shadow-md shadow-subheading_color hover:shadow-xl hover:shadow-heading_color md:text-lg lg:text-xl"
+            className="text-md px-3.5 py-1.5 shadow-md shadow-subheading_color hover:shadow-xl hover:shadow-heading_color md:px-5 md:py-2 md:text-lg lg:text-xl xl:text-2xl"
             href="#projects"
           >
             PROJECTS
