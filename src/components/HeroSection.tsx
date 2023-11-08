@@ -15,8 +15,8 @@ const Hero: FC<HeroProps> = ({}) => {
     <section className="bg-bg_white">
       <HeroShell id="hero">
         <HeroTextShell>
-          <HeroTitle>Software Engineer</HeroTitle>
           <HeroSubTitle>Charles Trangay</HeroSubTitle>
+          <HeroTitle>Software Engineer</HeroTitle>
           <HeroMessage className="mb-4 mt-2 md:mb-6 md:mt-3 lg:mb-12 lg:mt-6">
             Evolving through Obstacles.
             <br /> Empowering through Competition.
