@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Linkedin, Mail} from "lucide-react";
 import { SocialIconButton } from "@/components/SocialIconButton";
 
 export function ContactSection() {
@@ -21,18 +21,18 @@ export function ContactSection() {
               Get In Touch
             </h2>
             <p className="text-muted-foreground max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I'm always interested in new opportunities and collaborations.
-              Let's connect and discuss how we can work together.
+              I&apos;m always interested in new opportunities and collaborations.
+              Let&apos;s connect and discuss how we can work together.
             </p>
           </div>
         </div>
 
         <div className="mx-auto flex max-w-5xl justify-center gap-6 py-12">
           <Card className="w-full max-w-md">
-            <CardHeader>
-              <CardTitle>Let's Work Together</CardTitle>
+            <CardHeader>    
+              <CardTitle>Let&apos;s Work Together</CardTitle>   
               <CardDescription>
-                I'm currently available for freelance work and full-time
+                I&apos;m currently available for freelance work and full-time
                 opportunities.
               </CardDescription>
             </CardHeader>

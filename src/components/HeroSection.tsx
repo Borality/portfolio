@@ -23,7 +23,7 @@ export function HeroSection() {
               </div>
             </div>
             <h1 id="home-heading" className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                 Charles
               </span>
