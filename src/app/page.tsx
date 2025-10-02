@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main id="content" className="pt-16 md:pt-20">
+      <main id="content">
         <section id="home" aria-labelledby="home-heading" className="scroll-mt-24">
           <HeroSection />
         </section>

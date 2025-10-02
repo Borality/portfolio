@@ -29,7 +29,7 @@ export function HeroSection() {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-              A passionate full-stack developer that gets things done.
+              I am a full-stack developer 💻
             </p>
           </div>
           
