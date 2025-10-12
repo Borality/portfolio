@@ -5,7 +5,6 @@ import { SocialIconButton } from "@/components/SocialIconButton"
 import Image from "next/image"
 import { TextRoll } from '@/components/ui/text-roll';
 
-
 export function HeroSection() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
