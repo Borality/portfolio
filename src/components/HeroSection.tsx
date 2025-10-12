@@ -3,6 +3,8 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 import { SocialIconButton } from "@/components/SocialIconButton"
 import Image from "next/image"
+import { TextRoll } from '@/components/ui/text-roll';
+
 
 export function HeroSection() {
   return (
@@ -23,10 +25,7 @@ export function HeroSection() {
               </div>
             </div>
             <h1 id="home-heading" className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
-              Hi, I&apos;m{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                Charles
-              </span>
+              <TextRoll duration={0.4}>{`Hi, I'm Charles`}</TextRoll>
             </h1>
             <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
               I am a full-stack developer 💻

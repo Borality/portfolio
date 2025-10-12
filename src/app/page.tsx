@@ -6,20 +6,20 @@ import { Footer } from "@/components/layouts/Footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <>
       <Navigation />
-      <main id="content">
-        <section id="home" aria-labelledby="home-heading" className="scroll-mt-24">
+      <main id="content" className="px-4 md:px-6">
+        <section id="home" aria-labelledby="home-heading">
           <HeroSection />
         </section>
-        <section id="projects" aria-labelledby="projects-heading" className="scroll-mt-24">
+        <section id="projects" aria-labelledby="projects-heading">
           <ProjectsSection />
         </section>
-        <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-24">
+        <section id="contact" aria-labelledby="contact-heading">
           <ContactSection />
         </section>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
