@@ -36,7 +36,7 @@ export function Projects() {
             <Tilt key={index} rotationFactor={8} isRevese>
               <Card
                 key={project.title}
-                className="group flex h-full flex-col overflow-hidden transition-all hover:shadow-lg"
+                className="group flex h-full flex-col overflow-hidden transition-all hover:shadow-lg max-w-xl"
               >
                 <CardHeader className="p-0">
                   <div className="relative aspect-video overflow-hidden">
