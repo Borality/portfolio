@@ -39,13 +39,13 @@ export const Header = () => {
                                 <Image width="40" height="40" src="https://firebasestorage.googleapis.com/v0/b/uploadingfiles-5bb89.appspot.com/o/Portfolio%2Flogo-compressed.png?alt=media&token=9ce6533f-1989-4327-a094-f4958f5210cc" alt="Logo" className="w-7 rounded-full md:w-10"/>
                             </Link>
 
-                            <button
+                            <Button
                                 onClick={() => setMenuState(!menuState)}
                                 aria-label={menuState == true ? 'Close Menu' : 'Open Menu'}
                                 className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden">
                                 <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
                                 <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
-                            </button>
+                            </Button>
                         </div>
 
                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
