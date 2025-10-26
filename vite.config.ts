@@ -11,5 +11,5 @@ export default defineConfig({
 			"@": path.resolve(__dirname, "./src"),
 		},
 	},
-	base: process.env.BASE_PATH ?? "/portfolio/",
+	base: process.env.BASE_PATH ?? "/",
 });
