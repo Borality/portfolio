@@ -1,12 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy to Github Pages
+name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ['main']
-  pull_request:
-    branches: ['**']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,35 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  quality:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-      - name: Set up Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: lts/*
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Biome format and fix (enforce clean tree)
-        run: |
-          pnpm format
-          pnpm fix
-          if ! git diff --quiet; then
-            echo "::error::Biome made changes. Run 'pnpm fix' locally and commit the results."
-            git --no-pager diff --name-only
-            exit 1
-          fi
   # Single deploy job since we're just deploying
   deploy:
-    if: github.event_name == 'push'
-    needs: quality
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -59,30 +30,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
       - name: Set up Node
         uses: actions/setup-node@v5
         with:
           node-version: lts/*
-          cache: 'pnpm'
+          cache: 'npm'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Build
-        run: pnpm run build
-        env:
-          BASE_PATH: /portfolio/
-      - name: Create 404.html SPA fallback
-        run: cp build/client/index.html build/client/404.html
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload dist folder
-          path: './build/client'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

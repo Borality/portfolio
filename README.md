@@ -1,128 +1,124 @@
-<div align="center">
+# Portfolio
 
-# Borality Portfolio
-
-Personal portfolio built with React Router v7 and Vite. Deployed to GitHub Pages.
-
-</div>
+Modern, fast personal portfolio built with Vite, React 19, React Router v7, and Tailwind CSS 4. It showcases projects with a clean UI, subtle motion, and responsive cards.
 
 ## Tech Stack
 
-- React 19 + TypeScript
-- Vite 7
-- React Router v7 (SPA mode)
-- Tailwind CSS 4
-- Biome (format, lint, organize imports)
-- pnpm
-
-## Features
-
-- Fast SPA with client-side routing
-- Modern styling with Tailwind
-- Strict code quality via Biome (format, lint, organize imports)
-- CI/CD to GitHub Pages
+- **Framework**: Vite + React 19 with React Compiler
+- **Routing**: React Router v7 (declarative APIs)
+- **Styling**: Tailwind CSS 4
+- **UI**: shadcn/ui components, lucide-react icons
+- **DX**: TypeScript, vite-tsconfig-paths, Biome for lint/format
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 20+
-- pnpm 9+
+- Node.js 20+ (LTS recommended)
+- A package manager: pnpm (recommended) or npm
 
-### Install
+### Install dependencies
 
 ```bash
-pnpm install
+pnpm i
+# or
+npm ci
 ```
 
-### Development
+### Run the app
 
 ```bash
 pnpm dev
+# or
+npm run dev
 ```
 
-App runs at http://localhost:5173
+App runs at http://localhost:5173 by default.
 
-### Type Checking
+## Scripts
+
+- `dev`: start Vite dev server
+- `build`: type-check and build production assets
+- `preview`: preview the production build locally
+- `lint`: check with Biome
+- `lint:fix`: auto-fix with Biome
+- `format`: format with Biome
 
 ```bash
-pnpm typecheck
+pnpm build && pnpm preview
+# or
+npm run build && npm run preview
 ```
 
-### Code Quality (Biome)
+## Project Structure
+
+- `src/features/projects/` – project list and cards
+- `src/data/projects.ts` – project data source and `Project` type
+- `public/` – static assets (project images, favicons, etc.)
+
+## Projects Data
+
+Projects are defined in `src/data/projects.ts`:
+
+```ts
+export type Project = {
+  title: string;
+  description: string;
+  image: string; // path from /public or a full URL
+  technologies: string[];
+  githubUrl: string;
+  liveUrl?: string;
+};
+```
+
+Images are served from `public/`. Prefer a 16:9 image for best fit with the card header’s `aspect-video`. Use large, optimized images and let the UI downscale.
+
+## Linting & Formatting
+
+This repo uses **Biome** for linting and formatting.
 
 ```bash
-pnpm format   # biome format --write
-pnpm fix      # biome check --write (autofix + organize imports)
-pnpm lint     # biome lint
-pnpm check    # biome check (verify only)
+pnpm lint
+pnpm lint:fix
+pnpm format
+# or
+npm run lint
+npm run lint:fix
+npm run format
 ```
 
 ## Build
 
 ```bash
 pnpm build
+# or
+npm run build
 ```
 
-The output is written to `build/`:
-
-```
-build/
-├── client/   # Static site (deployed to GitHub Pages)
-└── server/   # SSR bundle (not used for Pages)
-```
-
-## Scripts
-
-- `dev`: React Router dev server
-- `build`: React Router build
-- `start`: Preview built server with `react-router-serve ./build/server/index.js`
-- `typecheck`: `react-router typegen && tsc`
-- `format`: `biome format --write`
-- `fix`: `biome check --write`
-- `lint`: `biome lint`
-- `check`: `biome check`
+Outputs to `dist/`.
 
 ## Deployment (GitHub Pages)
 
-This repository includes a workflow at `.github/workflows/pages.yml` that:
+This repo includes a workflow at `.github/workflows/pages.yml` that builds the site and deploys `dist/` to GitHub Pages on pushes to `main`.
 
-- Runs Biome format/fix/lint and TypeScript checks on PRs and pushes
-- Builds the site with a `BASE_PATH` of `/<repo>/` for Project Pages
-- Publishes `build/client` to GitHub Pages, adding `404.html` and `.nojekyll`
+Notes:
 
-After merging to `main`, the site will be available at:
+- For a repository (project) page at `https://<user>.github.io/<repo>/`, set a base path in `vite.config.ts`:
 
-```
-https://<username>.github.io/<repo>/
-```
-
-For this repo:
-
-```
-https://borality.github.io/portfolio/
+```ts
+export default defineConfig({
+  base: '/<repo>/',
+  // ...
+})
 ```
 
-### Local build with a custom base path (optional)
+- Ensure your package manager in the workflow matches your local usage. The current workflow uses `npm ci && npm run build`. If you prefer pnpm, switch steps accordingly.
 
-If you need to emulate the Pages base path locally:
+Once enabled in the repo settings (Pages: GitHub Actions), deployments will appear automatically after pushing to `main`.
 
-```bash
-BASE_PATH=/portfolio/ pnpm build
-```
+## Acknowledgements
 
-## Project Structure (top-level)
+- Vite, React, React Router
+- Tailwind CSS, shadcn/ui, lucide-react
+- Biome
 
-```
-app/               # Routes, features, components
-public/            # Static assets
-react-router.config.ts
-vite.config.ts
-biome.json
-```
-
-## Troubleshooting
-
-- 404 on reload or deep links: ensure `404.html` is present (workflow generates it).
-- Broken assets on GitHub Pages: confirm the `BASE_PATH` matches `/<repo>/`.
-- Lint warnings from generated types in `.react-router/`: these are typegen files; non-blocking unless configured as errors.
