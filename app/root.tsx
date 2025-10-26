@@ -25,6 +25,12 @@ export const links: Route.LinksFunction = () => [
 		rel: "stylesheet",
 		href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap",
 	},
+	{
+		rel: "icon",
+		href: "logo.png",
+		type: "image/png",
+	},
+	{ rel: "apple-touch-icon", href: "logo.png" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
