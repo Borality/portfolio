@@ -5,8 +5,20 @@ import type { Route } from "./+types/home";
 
 export function meta(_args: Route.MetaArgs) {
 	return [
-		{ title: "New React Router App" },
-		{ name: "description", content: "Welcome to React Router!" },
+		{
+			title: "Charles T. - Full Stack Developer",
+			description:
+				"Passionate full-stack developer creating beautiful, functional, and user-centered digital experiences. Specializing in React, Next.js, and modern web technologies.",
+			keywords: [
+				"developer",
+				"full-stack",
+				"react",
+				"nextjs",
+				"typescript",
+				"portfolio",
+			],
+			authors: [{ name: "Charles T." }],
+		},
 	];
 }
 
