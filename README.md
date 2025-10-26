@@ -1,87 +1,128 @@
-# Welcome to React Router!
+<div align="center">
 
-A modern, production-ready template for building full-stack React applications using React Router.
+# Borality Portfolio
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Personal portfolio built with React Router v7 and Vite. Deployed to GitHub Pages.
+
+</div>
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite 7
+- React Router v7 (SPA mode)
+- Tailwind CSS 4
+- Biome (format, lint, organize imports)
+- pnpm
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Fast SPA with client-side routing
+- Modern styling with Tailwind
+- Strict code quality via Biome (format, lint, organize imports)
+- CI/CD to GitHub Pages
 
 ## Getting Started
 
-### Installation
+### Prerequisites
 
-Install the dependencies:
+- Node.js 20+
+- pnpm 9+
+
+### Install
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
 
-Start the development server with HMR:
+```bash
+pnpm dev
+```
+
+App runs at http://localhost:5173
+
+### Type Checking
 
 ```bash
-npm run dev
+pnpm typecheck
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
+### Code Quality (Biome)
 
 ```bash
-npm run build
+pnpm format   # biome format --write
+pnpm fix      # biome check --write (autofix + organize imports)
+pnpm lint     # biome lint
+pnpm check    # biome check (verify only)
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+## Build
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+pnpm build
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+The output is written to `build/`:
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+build/
+├── client/   # Static site (deployed to GitHub Pages)
+└── server/   # SSR bundle (not used for Pages)
 ```
 
-## Styling
+## Scripts
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- `dev`: React Router dev server
+- `build`: React Router build
+- `start`: Preview built server with `react-router-serve ./build/server/index.js`
+- `typecheck`: `react-router typegen && tsc`
+- `format`: `biome format --write`
+- `fix`: `biome check --write`
+- `lint`: `biome lint`
+- `check`: `biome check`
 
----
+## Deployment (GitHub Pages)
 
-Built with ❤️ using React Router.
+This repository includes a workflow at `.github/workflows/pages.yml` that:
+
+- Runs Biome format/fix/lint and TypeScript checks on PRs and pushes
+- Builds the site with a `BASE_PATH` of `/<repo>/` for Project Pages
+- Publishes `build/client` to GitHub Pages, adding `404.html` and `.nojekyll`
+
+After merging to `main`, the site will be available at:
+
+```
+https://<username>.github.io/<repo>/
+```
+
+For this repo:
+
+```
+https://borality.github.io/portfolio/
+```
+
+### Local build with a custom base path (optional)
+
+If you need to emulate the Pages base path locally:
+
+```bash
+BASE_PATH=/portfolio/ pnpm build
+```
+
+## Project Structure (top-level)
+
+```
+app/               # Routes, features, components
+public/            # Static assets
+react-router.config.ts
+vite.config.ts
+biome.json
+```
+
+## Troubleshooting
+
+- 404 on reload or deep links: ensure `404.html` is present (workflow generates it).
+- Broken assets on GitHub Pages: confirm the `BASE_PATH` matches `/<repo>/`.
+- Lint warnings from generated types in `.react-router/`: these are typegen files; non-blocking unless configured as errors.
