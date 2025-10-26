@@ -4,6 +4,7 @@ import { Header } from "@/components/layouts/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Contact } from "@/features/contact/contact";
 import { Hero } from "@/features/hero/hero";
+import { NotFound } from "@/features/not-found/not-found";
 import { Projects } from "@/features/projects/projects";
 
 function HomePage() {
@@ -51,6 +52,8 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
+				<Route path="/portfolio" element={<HomePage />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</ThemeProvider>
