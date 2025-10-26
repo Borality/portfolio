@@ -68,7 +68,7 @@ export const projects: Project[] = [
 		liveUrl: "https://github.com/250908-NET/Pangolins",
 	},
 	{ 
-		title: "Fadebook – Barber Platform",
+		title: "Fadebook – Barber Management Platform",
 		description:
 			"A full‑stack barbershop booking app with appointment scheduling, customer dashboards, dark mode, and real‑time updates. Built with Next.js, React, TypeScript, Tailwind, and shadcn/ui on the frontend, and ASP.NET Core, SQL Server, and Entity Framework Core on the backend with structured logging.",
 		image: "/fadebook.jpg",
