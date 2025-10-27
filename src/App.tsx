@@ -48,7 +48,7 @@ function HomePage() {
 
 function App() {
 	return (
-		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+		<ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
 			<Header />
 			<Routes>
 				<Route path="/" element={<HomePage />} />

@@ -69,7 +69,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build
+        run: pnpm build --mode ghpages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
