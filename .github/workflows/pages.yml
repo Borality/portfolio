@@ -69,7 +69,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build --mode ghpages
+        run: pnpm build
+        env:
+          VITE_BASE: /portfolio
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
