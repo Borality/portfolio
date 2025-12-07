@@ -1,27 +1,74 @@
-import { TextShimmerWave } from "@/components/ui/text-shimmer-wave";
+import { motion } from "motion/react";
 import { projects } from "@/data/projects";
 import { ProjectList } from "@/features/projects/ProjectList";
 
 export function Projects() {
 	return (
-		<div className="min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4">
-			<div>
-				<div className="flex flex-col items-center justify-center text-center">
-					<div className="space-y-2">
-						<h2
-							id="projects-heading"
-							className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
-						>
-							<TextShimmerWave duration={2}>Featured Projects</TextShimmerWave>
-						</h2>
-						<p className="text-muted-foreground max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-							Here are some of my memorable projects I enjoyed working on.
-						</p>
-					</div>
+		<section className="relative min-h-screen py-24 md:py-32">
+			{/* Top divider */}
+			<div className="absolute inset-x-0 top-0">
+				<div className="mx-auto max-w-7xl px-6 lg:px-8">
+					<div className="h-px bg-linear-to-r from-transparent via-border to-transparent" />
 				</div>
+			</div>
 
+			{/* Background accent */}
+			<div className="pointer-events-none absolute inset-0 overflow-hidden">
+				<div className="absolute -top-1/2 left-1/2 h-[800px] w-[800px] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
+			</div>
+
+			<div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+				{/* Header */}
+				<motion.header
+					initial={{ opacity: 0, y: 24 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, margin: "-100px" }}
+					transition={{ duration: 0.5, ease: "easeOut" }}
+					className="mb-16 text-center md:mb-20"
+				>
+					<motion.span
+						initial={{ opacity: 0, scale: 0.9 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.4, delay: 0.1 }}
+						className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
+					>
+						Portfolio
+					</motion.span>
+
+					<h2
+						id="projects-heading"
+						className="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+					>
+						Featured{" "}
+						<span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+							Projects
+						</span>
+					</h2>
+
+					<motion.p
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5, delay: 0.2 }}
+						className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+					>
+						A showcase of applications I've built with passion—each one
+						reflecting my commitment to clean code, thoughtful design, and great
+						user experiences.
+					</motion.p>
+				</motion.header>
+
+				{/* Projects Grid */}
 				<ProjectList projects={projects} />
 			</div>
-		</div>
+
+			{/* Bottom divider */}
+			<div className="absolute inset-x-0 bottom-0">
+				<div className="mx-auto max-w-7xl px-6 lg:px-8">
+					<div className="h-px bg-linear-to-r from-transparent via-border to-transparent" />
+				</div>
+			</div>
+		</section>
 	);
 }
