@@ -59,20 +59,13 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 								{/* Tech stack */}
 								<div className="mt-4 flex flex-wrap gap-2">
 									{project.technologies.map((tech, techIndex) => (
-										<motion.span
+										<span
 											// biome-ignore lint/suspicious/noArrayIndexKey: static list
 											key={techIndex}
-											initial={{ opacity: 0, scale: 0.8 }}
-											whileInView={{ opacity: 1, scale: 1 }}
-											viewport={{ once: true }}
-											transition={{
-												duration: 0.3,
-												delay: 0.2 + techIndex * 0.03,
-											}}
-											className="inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium transition-all duration-200 border-primary/40 bg-primary/10 text-primary"
+											className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
 										>
 											{tech}
-										</motion.span>
+										</span>
 									))}
 								</div>
 
