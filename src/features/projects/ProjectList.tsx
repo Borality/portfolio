@@ -14,7 +14,7 @@ import type { Project } from "@/data/projects";
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
-		<div className="mx-auto grid max-w-6xl items-stretch gap-6 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
+		<div className="mx-auto grid max-w-7xl items-stretch gap-6 md:gap-8 lg:grid-cols-2 xl:grid-cols-3">
 			{projects.map((project, index) => (
 				<motion.div
 					key={project.title}
@@ -28,7 +28,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 					}}
 					className="flex"
 				>
-					<Tilt rotationFactor={6} isRevese className="flex w-full">
+					<Tilt rotationFactor={4} isRevese className="flex w-full">
 						<Card className="group relative flex h-full w-full flex-col overflow-hidden pt-0 transition-shadow duration-300 hover:shadow-lg">
 							{/* Image */}
 							<CardHeader className="p-0">
@@ -47,17 +47,17 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 							{/* Content */}
 							<CardContent className="flex flex-1 flex-col p-6 pb-0">
 								{/* Title */}
-								<CardTitle className="text-lg font-semibold leading-7 tracking-tight md:text-xl">
+								<CardTitle className="text-lg font-semibold leading-6 tracking-tight md:text-xl mb-2">
 									{project.title}
 								</CardTitle>
 
 								{/* Description */}
-								<CardDescription className="mt-3 text-sm leading-relaxed">
+								<CardDescription className="text-sm leading-normal mb-5">
 									{project.description}
 								</CardDescription>
 
 								{/* Tech stack */}
-								<div className="mt-4 flex flex-wrap gap-2">
+								<div className="flex flex-wrap gap-2">
 									{project.technologies.map((tech, techIndex) => (
 										<span
 											// biome-ignore lint/suspicious/noArrayIndexKey: static list
@@ -74,7 +74,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 							</CardContent>
 
 							{/* Footer */}
-							<CardFooter className="flex gap-3 border-t border-border/50 p-4 mt-6">
+							<CardFooter className="flex gap-3 border-t border-border/50 p-4">
 								<Button
 									asChild
 									variant="ghost"

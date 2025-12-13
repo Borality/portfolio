@@ -58,7 +58,7 @@ export function Contact() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-100px" }}
 					transition={{ duration: 0.5, ease: "easeOut" }}
-					className="mb-16 text-center md:mb-20"
+					className="mb-4 text-center md:mb-8"
 				>
 					<motion.span
 						initial={{ opacity: 0, scale: 0.9 }}
@@ -73,7 +73,7 @@ export function Contact() {
 
 					<h2
 						id="contact-heading"
-						className="mx-auto mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+						className="mx-auto mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl leading-14 mb-4"
 					>
 						Let's build something{" "}
 						<span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
@@ -87,7 +87,7 @@ export function Contact() {
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.5, delay: 0.2 }}
-						className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+						className="mx-auto max-w-2xl text-lg leading-snug text-muted-foreground"
 					>
 						I'm always excited to connect with fellow developers, designers, and
 						anyone with a great idea. Whether it's a full-time role, freelance

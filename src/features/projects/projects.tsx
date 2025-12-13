@@ -38,7 +38,7 @@ export function Projects() {
 
 					<h2
 						id="projects-heading"
-						className="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+						className="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl leading-8 mb-8"
 					>
 						Featured{" "}
 						<span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ export function Projects() {
 						whileInView={{ opacity: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.5, delay: 0.2 }}
-						className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
+						className="mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground"
 					>
 						A showcase of applications I've built with passion—each one
 						reflecting my commitment to clean code, thoughtful design, and great

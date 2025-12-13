@@ -8,7 +8,7 @@ export function Hero() {
 	return (
 		<div className="min-h-screen flex items-center justify-center max-w-7xl mx-auto px-4">
 			<div className="container px-4 md:px-6">
-				<div className="flex flex-col items-center space-y-8 text-center">
+				<div className="flex flex-col items-center text-center">
 					<div className="space-y-4">
 						<div className="flex justify-center">
 							<div className="relative h-24 w-24 md:h-28 md:w-28">
@@ -19,18 +19,20 @@ export function Hero() {
 								/>
 							</div>
 						</div>
-						<h1
-							id="home-heading"
-							className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground"
-						>
-							<TextRoll duration={0.4}>{`Hi, I'm Charles`}</TextRoll>
-						</h1>
-						<p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
-							I am a full-stack developer 💻
-						</p>
+						<div className="grid lg:gap-3 lg:mb-6 md:gap-2 md:mb-4 gap-1 mb-2">
+							<h1
+								id="home-heading"
+								className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-12"
+							>
+								<TextRoll duration={0.4}>{`Hi, I'm Charles`}</TextRoll>
+							</h1>
+							<p className="text-lg text-muted-foreground md:text-xl">
+								I am a full-stack developer 💻
+							</p>
+						</div>
 					</div>
 
-					<div className="flex flex-col sm:flex-row gap-4">
+					<div className="flex flex-col sm:flex-row lg:gap-4 gap-3 lg:mb-8 mb-6">
 						<Button asChild size="lg" className="text-base">
 							<Link to="#contact">
 								<Mail className="mr-2 h-4 w-4" />
@@ -45,25 +47,25 @@ export function Hero() {
 						</Button>
 					</div>
 
-					<div className="flex space-x-6">
+					<div className="flex lg:gap-4 gap-3">
 						<SocialIconButton
 							href="https://github.com/Borality"
 							ariaLabel="GitHub"
-							icon={<Github className="h-6 w-6" />}
+							icon={<Github />}
 							variant="ghost"
 							className="h-12 w-12"
 						/>
 						<SocialIconButton
 							href="https://www.linkedin.com/in/charles-trangay/"
 							ariaLabel="LinkedIn"
-							icon={<Linkedin className="h-6 w-6" />}
+							icon={<Linkedin />}
 							variant="ghost"
 							className="h-12 w-12"
 						/>
 						<SocialIconButton
 							href="mailto:charles-trangay-portfolio-contact.overfeed094@aleeas.com"
 							ariaLabel="Email"
-							icon={<Mail className="h-6 w-6" />}
+							icon={<Mail />}
 							variant="ghost"
 							className="h-12 w-12"
 						/>
