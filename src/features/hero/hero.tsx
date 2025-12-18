@@ -19,10 +19,10 @@ export function Hero() {
 								/>
 							</div>
 						</div>
-						<div className="grid lg:gap-3 lg:mb-6 md:gap-2 md:mb-4 gap-1 mb-2">
+						<div className="grid lg:gap-3 lg:mb-6 md:gap-2 mb-4 gap-1">
 							<h1
 								id="home-heading"
-								className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-12"
+								className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-foreground md:leading-12 leading-7"
 							>
 								<TextRoll duration={0.4}>{`Hi, I'm Charles`}</TextRoll>
 							</h1>

@@ -73,7 +73,7 @@ export function Contact() {
 
 					<h2
 						id="contact-heading"
-						className="mx-auto mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl leading-14 mb-4"
+						className="mx-auto mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl md:leading-14 leading-9 mb-4"
 					>
 						Let's build something{" "}
 						<span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">

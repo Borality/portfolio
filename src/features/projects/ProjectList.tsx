@@ -45,7 +45,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 							</CardHeader>
 
 							{/* Content */}
-							<CardContent className="flex flex-1 flex-col p-6 pb-0">
+							<CardContent className="flex flex-1 flex-col p-4 md:p-6 pb-0">
 								{/* Title */}
 								<CardTitle className="text-lg font-semibold leading-6 tracking-tight md:text-xl mb-2">
 									{project.title}

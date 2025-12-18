@@ -31,14 +31,14 @@ export function Projects() {
 						whileInView={{ opacity: 1, scale: 1 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.4, delay: 0.1 }}
-						className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
+						className="md:mb-4 mb-2 inline-block rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
 					>
 						Portfolio
 					</motion.span>
 
 					<h2
 						id="projects-heading"
-						className="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl leading-8 mb-8"
+						className="mx-auto mt-4 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl md:leading-8 leading-3 md:mb-8 mb-6"
 					>
 						Featured{" "}
 						<span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
